@@ -1,0 +1,20 @@
+
+ul.links li a:hover {
+  color: green;
+}
+
+ul.archives-links li a {
+  color: black;
+}
+
+ul.archives-links li a:hover {
+  color: darken(darkgrey, 25%);
+}
+
+a.country {
+  color: black;
+}
+
+a:hover.country {
+  color: darken(darkgrey, 25%);
+}

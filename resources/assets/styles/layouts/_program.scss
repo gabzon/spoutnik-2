@@ -1,0 +1,58 @@
+.program {
+  margin-bottom: 10px;
+}
+
+#week-program.program .ui.grid .column {
+  .img-container {
+    position: relative;
+
+    a:hover .film-image {
+      filter: brightness(80%);
+    }
+
+    .film-image {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+
+    .film-title {
+      z-index: 100;
+      position: absolute;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      left: 10px;
+      top: -15px;
+      //text-shadow: 0.2px 0.2px 0px rgba(150, 150, 150, 1);
+      letter-spacing: 1px;
+    }
+
+    h5.film-tagline {
+      z-index: 100;
+      position: absolute;
+      color: white !important;
+      font-size: 16px;
+      font-weight: bold;
+      left: 10px;
+      bottom: 15px !important;
+      //text-shadow: 0.2px 0.2px 0px rgba(150, 150, 150, 1);
+      letter-spacing: 1px;
+    }
+  }
+
+  h3.film-week-detail {
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+  h5 {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+
+#month-program.program .ui.grid .column h5 {
+  margin: 0;
+}

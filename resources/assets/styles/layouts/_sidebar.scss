@@ -1,0 +1,44 @@
+#sidebar-computer-menu,
+#sidebar-mobile-menu {
+  .title {
+    color: #fefefe;
+  }
+
+  .content {
+    margin-left: 50px;
+  }
+
+  .menu-sidebar-container {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li a {
+        color: white;
+      }
+
+      li a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .content {
+    h5.sidebar-h5 {
+      font-weight: normal;
+    }
+
+    .ui.grid .column h5.sidebar-h5 {
+      font-weight: normal;
+    }
+  }
+
+  table {
+    border-spacing: 10px;
+
+    td {
+      padding: 5px 10px;
+      vertical-align: top;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.film-content {
+  p {
+    font-size: 1.11em;
+    line-height: 1.4em;
+  }
+}
+
+#the-movie a.movie-website {
+  color: black;
+}
+
+#the-movie a:hover.movie-website {
+  text-decoration: underline;
+}
+
+#the-movie table tbody tr td h5 a.movie-website {
+  color: black;
+}
+
+#the-movie table tbody tr td h5 a:hover.movie-website {
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+footer .sidebar-footer {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: white;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+footer {
+  .column a.facebook-icon {
+    color: white;
+  }
+
+  .column a:hover.facebook-icon {
+    color: lightblue;
+  }
+}
+
+footer h5 {
+  font-weight: normal;
+  line-height: 20px;
+}
