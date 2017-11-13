@@ -10474,6 +10474,10 @@ html.ios body {
   margin-bottom: 0;
 }
 
+.slick-slide a:hover {
+  color: white;
+}
+
 ul.links li a:hover {
   color: green;
 }

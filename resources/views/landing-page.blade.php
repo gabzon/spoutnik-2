@@ -9,7 +9,7 @@ $theme_options = get_option('my_theme_settings');
 $full_program = $theme_options['spoutnik_programme_complet'];
 @endphp
 
-@section('content')  
+@section('content')
   <br>
   <div class="landing-content">
     <div class="gray-shadow">
@@ -47,7 +47,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
     <div class="ui grid stackable">
       <div class="one wide column"></div>
       <div class="fifteen wide column">
-        <h1 style="text-transform:uppercase"><?php _e('Also at Spoutnik','sage'); ?></h1>
+        <h1 class="ttu">Focus</h1>
       </div>
     </div>
     <br><br><br>
@@ -55,7 +55,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
     $args = array(
       'posts_per_page'   => 3,
       'category_name'    => 'focus',
-      'order'            => 'DESC',
+      'order'            => 'ASC',
       'post_type'        => 'post',
       'post_status'      => 'publish',
       'suppress_filters' => true

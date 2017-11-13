@@ -22,7 +22,7 @@ $query = new WP_Query( $args );
       <div class="movie" style="height:75vh; position:relative">
         <img src="{{ $feature_image }}">
         <span class="white" style="position: absolute; bottom:30px; left: 50%; transform: translate(-50%, -50%);">
-          <a href="@php( the_permalink() )" style="text-shadow: 1px 1px black;" class="white tc center f4">
+          <a href="@php( the_permalink() )" style="text-shadow: 1px 1px black;" class="white tc center f3">
             @php( the_title() ) <br>
             {{ get_post_meta($post->ID,'film_landing',true) }}
           </a>
