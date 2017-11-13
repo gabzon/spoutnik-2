@@ -27,7 +27,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
 
       @include('today-films')
 
-      {{-- @include('program.week')  --}}
+      {{-- @include('program.week')   --}}
 
       <div class="ui one column grid">
         <div class="column center aligned">
@@ -60,22 +60,27 @@ $full_program = $theme_options['spoutnik_programme_complet'];
       'post_status'      => 'publish',
       'suppress_filters' => true
     );
-    $posts = get_posts( $args );
+    $focus_posts = get_posts( $args );
     @endphp
-
-
     <div class="ui grid four column stackable row">
-      <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+      @foreach ($focus_posts as $post)
         <div class="three wide column col-3"></div>
         <div class="seven wide column col-3">
-          <h1><a href="<?php the_permalink(); ?>" style="color:black; text-transform:uppercase;"><?php the_title(); ?></a></h1>
-          <?php the_excerpt(); ?>
+          <h1><a href="<?= get_permalink($post) ?>" style="color:black; text-transform:uppercase;">{{ $post->post_title }}</a></h1>
+
+          {{-- https://wordpress.stackexchange.com/questions/268162/get-excerpt-from-post-post-content --}}
+          <?php echo wp_trim_excerpt(); ?>
+
         </div>
         <div class="four wide column col-3">
-          <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full'); ?>
+          <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full'); ?>
           <img src="<?= $image[0]; ?>" alt="" class="ui image"/>
         </div>
         <div class="two wide column col-3"></div>
+      @endforeach
+
+      <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+
       <?php endforeach;
       wp_reset_postdata();?>
     </div>

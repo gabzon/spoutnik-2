@@ -20,7 +20,7 @@ $query = new WP_Query( $args );
       -- https://www.w3schools.com/howto/howto_css_image_text.asp
       --}}
       <div class="movie" style="height:75vh; position:relative">
-        <img src="{{ $feature_image }}">
+        <img src="{{ $feature_image }}" width="100%">
         <span class="white" style="position: absolute; bottom:30px; left: 50%; transform: translate(-50%, -50%);">
           <a href="@php( the_permalink() )" style="text-shadow: 1px 1px black;" class="white tc center f3">
             @php( the_title() ) <br>
