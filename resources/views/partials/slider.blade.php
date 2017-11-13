@@ -13,7 +13,7 @@ $query = new WP_Query( $args );
   <div class="slick mt5">
     @while ( $query->have_posts() )
       @php( $query->the_post() )
-      @php( $feature_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ) )
+      @php( $feature_image = wp_get_attachment_url( get_post_thumbnail_id( the_ID() ) ) )
 
       {{--
       -- How to center a text over an image
