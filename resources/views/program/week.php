@@ -27,7 +27,7 @@ if ( $query->have_posts() ) {
         $schedule = get_post_meta($post->ID,'film_horaire',true);
 
         $feature_image = wp_get_attachment_url( get_post_thumbnail_id());
-        $movie_title = $post->post_title; 
+        $movie_title = $post->post_title;
 
         if ($schedule) {
             foreach ($schedule as $key) {
