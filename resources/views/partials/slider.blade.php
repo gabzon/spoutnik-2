@@ -13,7 +13,7 @@ $query = new WP_Query( $args );
   <div class="slick mt5">
     @while ( $query->have_posts() )
       @php( $query->the_post() )
-      @php( $feature_image = wp_get_attachment_url( get_post_thumbnail_id( the_ID() ) ) )
+      @php( $feature_image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) ) )
 
       {{--
       -- How to center a text over an image
@@ -24,7 +24,7 @@ $query = new WP_Query( $args );
         <span class="white" style="position: absolute; bottom:30px; left: 50%; transform: translate(-50%, -50%);">
           <a href="@php( the_permalink() )" style="text-shadow: 1px 1px black;" class="white tc center f3">
             @php( the_title() ) <br>
-            {{ get_post_meta($post->ID,'film_landing',true) }}
+            {{ get_post_meta(get_the_ID(),'film_landing',true) }}
           </a>
         </span>
 
