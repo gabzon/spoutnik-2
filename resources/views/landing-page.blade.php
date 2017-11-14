@@ -27,7 +27,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
 
       @include('today-films')
 
-      {{-- @include('program.week')   --}}
+      @include('program.week')
 
       <div class="ui one column grid">
         <div class="column center aligned">
