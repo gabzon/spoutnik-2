@@ -61,7 +61,16 @@ array_map(function ($file) use ($sage_error) {
 }, [
   'helpers', 'setup', 'filters', 'admin', 'default', 'sorting',
   'status',
-  'post-status/film_status', 'post-type/film', 'taxonomy/couleur', 'taxonomy/country', 'taxonomy/cycle', 'taxonomy/director', 'taxonomy/format', 'taxonomy/language', 'taxonomy/program', 'taxonomy/year',
+  'taxonomy/couleur',
+  'taxonomy/country',
+  'taxonomy/cycle',
+  'taxonomy/director',
+  'taxonomy/format',
+  'taxonomy/language',
+  'taxonomy/program',
+  'taxonomy/year',
+  'post-status/film_status',
+  'post-type/film',
 ]);
 
 /**

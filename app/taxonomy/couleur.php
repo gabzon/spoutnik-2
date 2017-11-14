@@ -39,7 +39,7 @@ function couleur() {
 		'query_var'                  => '',
 		'rewrite'                    => $rewrite,
 	);
-	register_taxonomy( 'couleur', array( 'post', ' fillm', ' event' ), $args );
+	register_taxonomy( 'couleur', array( 'post', ' film', ' event' ), $args );
 
 }
 add_action( 'init', 'couleur', 0 );

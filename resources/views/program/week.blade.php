@@ -38,12 +38,12 @@ $films_week = array();
         @if ( ($movie_date_reformatted >= $date_now) & ($movie_date_reformatted <= $date_film_soon) )
           @php
           $film_detail = array(
-          'id'        => $post->ID,
-          'image'     => $feature_image,
-          'title'     => $movie_title,
-          'date'      => $movie_date_reformatted,
-          'hour'      => $key['film_heure'],
-          'tagline'   => get_post_meta($post->ID,'film_landing',true)
+            'id'        => $post->ID,
+            'image'     => $feature_image,
+            'title'     => $movie_title,
+            'date'      => $movie_date_reformatted,
+            'hour'      => $key['film_heure'],
+            'tagline'   => get_post_meta($post->ID,'film_landing',true)
           );
           array_push($films_week, $film_detail);
           @endphp
@@ -51,8 +51,8 @@ $films_week = array();
       @endforeach
     @endif
     @php
-        $last_date = $schedule[count($schedule)-1]['film_date'];
-        $last_projection = DateTime::createFromFormat('d/m/Y', $schedule[count($schedule)-1]['film_date'])->format('Y-m-d');
+    $last_date = $schedule[count($schedule)-1]['film_date'];
+    $last_projection = DateTime::createFromFormat('d/m/Y', $schedule[count($schedule)-1]['film_date'])->format('Y-m-d');
     @endphp
 
     @if ( $last_projection < $date_now )
@@ -69,7 +69,6 @@ $films_week = array();
 
 
 <?php
-
 wp_reset_postdata();
 
 $date = array();
