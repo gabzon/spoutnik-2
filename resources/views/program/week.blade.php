@@ -48,7 +48,7 @@ $films_week = [];
             'title'     => $movie_title,
             'date'      => $movie_date_reformatted,
             'hour'      => $key['film_heure'],
-            'tagline'   => get_post_meta($post->ID,'film_landing',true)
+            'tagline'   => get_post_meta(get_the_ID(),'film_landing',true)
           );
           array_push($films_week, $film_detail);
           @endphp
@@ -78,7 +78,6 @@ $hour = [];
 
 @php( array_multisort($date, SORT_ASC, $hour, SORT_ASC, $films_week) )
 
-
 <section id="week-program" class="program" style="background:#eee">
   <div class="ui container">
     <div class="ui grid">
@@ -107,7 +106,8 @@ $hour = [];
             <?php $language = get_the_terms($film['id'],'language'); ?>
             <?php $year = get_the_terms($film['id'],'film-year'); ?>
             <?php $format = get_the_terms($film['id'],'format'); ?>
-            <h5>
+            {{-- <h5>
+
               @if ($director)
                 @foreach ($director as $x)
                   {{ $x->name . ' ' }}
@@ -145,7 +145,7 @@ $hour = [];
               @if (get_post_meta($post->ID,'film_duration',true) )
                 {{ ' ' . get_post_meta($post->ID,'film_duration',true) }}
               @endif
-            </h5>
+            </h5> --}}
           </div>
         @endforeach
       @endif

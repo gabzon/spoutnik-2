@@ -34,11 +34,8 @@ class Film extends Controller
         clean_post_cache( get_the_ID() );
         $old_status = $post->post_status;
         $post->post_status = 'inactive';
-        wp_transition_post_status( 'inactive', $old_status, $post );
-        //echo 'je suis dedans';
-
+        wp_transition_post_status( 'inactive', $old_status, $post );      
       }
-      //echo 'je suis dehors';
 
   }
 

@@ -30,7 +30,8 @@
 
   @php(do_action('get_footer'))
   @include('partials.footer')
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+  {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script> --}}
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.13/semantic.min.js"></script>
   @php(wp_footer())
 </body>
 </html>

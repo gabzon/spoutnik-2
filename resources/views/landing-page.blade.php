@@ -64,19 +64,19 @@ $full_program = $theme_options['spoutnik_programme_complet'];
     @endphp
     <div class="ui grid four column stackable row">
       @foreach ($focus_posts as $post)
-        <div class="three wide column col-3"></div>
-        <div class="seven wide column col-3">
+        <div class="three wide column"></div>
+        <div class="seven wide column">
           <h1><a href="<?= get_permalink($post) ?>" style="color:black; text-transform:uppercase;">{{ $post->post_title }}</a></h1>
 
           {{-- https://wordpress.stackexchange.com/questions/268162/get-excerpt-from-post-post-content --}}
           <?php echo wp_trim_excerpt(); ?>
 
         </div>
-        <div class="four wide column col-3">
+        <div class="four wide column">
           <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full'); ?>
           <img src="<?= $image[0]; ?>" alt="" class="ui image"/>
         </div>
-        <div class="two wide column col-3"></div>
+        <div class="two wide column"></div>
       @endforeach
 
       <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
@@ -86,22 +86,22 @@ $full_program = $theme_options['spoutnik_programme_complet'];
     </div>
 
 
-  @php
-  $the_slug = 'front-page';
-  $args = [
-    'name'        => $the_slug,
-    'post_type'   => 'page',
-    'post_status' => 'publish',
-  ];
-  $my_posts = get_posts($args);
-  @endphp
-  @if ($my_posts)
-    @php($my_posts[0]->post_content)
-  @endif
+    @php
+    $the_slug = 'front-page';
+    $args = [
+      'name'        => $the_slug,
+      'post_type'   => 'page',
+      'post_status' => 'publish',
+    ];
+    $my_posts = get_posts($args);
+    @endphp
+    @if ($my_posts)
+      @php($my_posts[0]->post_content)
+    @endif
+    <br>
+    <br>
+    <br>
+  </div>
   <br>
-  <br>
-  <br>
-</div>
-<br>
 
 @endsection
