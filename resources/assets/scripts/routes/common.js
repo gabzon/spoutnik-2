@@ -16,6 +16,8 @@ export default {
     $('#main-menu-front-page.ui.sticky').sticky({context: '.main-wrapper'});
 
     $('#archive-tab.menu .item').tab();
+    $('#archive-tab.menu .item').css('background','red');
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
