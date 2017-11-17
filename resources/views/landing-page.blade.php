@@ -69,7 +69,8 @@ $full_program = $theme_options['spoutnik_programme_complet'];
           <h1><a href="<?= get_permalink($post) ?>" style="color:black; text-transform:uppercase;">{{ $post->post_title }}</a></h1>
 
           {{-- https://wordpress.stackexchange.com/questions/268162/get-excerpt-from-post-post-content --}}
-          <?php echo wp_trim_excerpt(); ?>
+          {{-- echo wp_trim_excerpt(); --}}
+          @php(the_excerpt())
 
         </div>
         <div class="four wide column">

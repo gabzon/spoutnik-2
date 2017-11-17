@@ -79,7 +79,6 @@
                     <img src="<?php echo $movie['image']; ?>" alt="" class="ui image" />
                 </a>
             <?php endif; ?>
-
         </div>
     </div>
 </div>
