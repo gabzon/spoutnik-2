@@ -1,0 +1,842 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Spoutnik\n"
+"POT-Creation-Date: 2016-05-03 19:46+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;__;_e;gettext\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../bower_components\n"
+"X-Poedit-SearchPathExcluded-1: ../node_modules\n"
+
+#: ../404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Désolé, nous n’avons trouvé ce que vous cherchez :-("
+
+#: ../base-landing-page.php:12 ../base.php:12
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"Vous utilisez une version obsolète de votre navigateur. Veuillez le  <a href="
+"\"http://browsehappy.com/\">mettre à jour</a> pour visionner correctement le "
+"site du Spoutnik ;)"
+
+#: ../controller/default.php:20
+msgid "Custom Settings"
+msgstr "Réglages personnalisés"
+
+#: ../controller/default.php:21
+msgid "Settings"
+msgstr "Réglages"
+
+#: ../controller/default.php:30
+msgid "Save Settings"
+msgstr "Sauvegarder les réglages"
+
+#: ../film-archives.php:55 ../model/taxonomy/cycle.php:10
+msgid "Cycles"
+msgstr "Cycles"
+
+#: ../film-archives.php:56
+msgid "Events"
+msgstr "Événements"
+
+#: ../film-archives.php:57
+msgid "Collaborations"
+msgstr "Collaborations"
+
+#: ../film-archives.php:58 ../model/taxonomy/director.php:11
+msgid "Directors"
+msgstr "Réalisation"
+
+#: ../film-archives.php:59 ../model/taxonomy/country.php:11
+#: ../templates/content-single-film.php:63
+msgid "Country"
+msgstr "Pays"
+
+#: ../film-archives.php:60
+msgid "Monthly"
+msgstr "Par mois"
+
+#: ../functions.php:28
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr "Erreurr localiser %s pour inclusion"
+
+#: ../index.php:5 ../search.php:6
+msgid "Sorry, no results were found."
+msgstr "Désolé, rien n'a été trouvé. :("
+
+#: ../landing-page.php:19 ../programme.php:23
+msgid "TODAY "
+msgstr "AUJOURD’HUI"
+
+#: ../landing-page.php:34
+msgid "full program"
+msgstr "programme complet"
+
+#: ../landing-page.php:46
+msgid "Also at Spoutnik"
+msgstr "Focus"
+
+#: ../lib/extras.php:31
+msgid "Continued"
+msgstr "Suite"
+
+#: ../lib/init.php:22
+msgid "Primary Navigation"
+msgstr "Navigation Primaire"
+
+#: ../lib/init.php:49
+msgid "Primary"
+msgstr "Primaire"
+
+#: ../lib/init.php:58
+msgid "Footer"
+msgstr "Pied de page"
+
+#: ../lib/titles.php:13
+msgid "Latest Posts"
+msgstr "Articles Récents"
+
+#: ../lib/titles.php:18
+#, php-format
+msgid "Search Results for %s"
+msgstr "Résultats pour %s"
+
+#: ../lib/titles.php:20 ../model/taxonomy/couleur.php:24
+#: ../model/taxonomy/country.php:25 ../model/taxonomy/cycle.php:24
+#: ../model/taxonomy/director.php:25 ../model/taxonomy/format.php:25
+#: ../model/taxonomy/language.php:25 ../model/taxonomy/year.php:25
+msgid "Not Found"
+msgstr "Non Trouvé"
+
+#: ../model/post-type/film.php:11
+msgid "Films"
+msgstr "Films"
+
+#: ../model/post-type/film.php:12 ../model/post-type/film.php:32
+msgid "Film"
+msgstr "Film"
+
+#: ../model/post-type/film.php:13
+msgid "Parent Item:"
+msgstr "Parent de l'article:"
+
+#: ../model/post-type/film.php:14
+msgid "All Films"
+msgstr "Tous les films"
+
+#: ../model/post-type/film.php:15
+msgid "Add New Film"
+msgstr "Ajouter un nouveau film"
+
+#: ../model/post-type/film.php:16
+msgid "Add New"
+msgstr "Ajouter un nouveau"
+
+#: ../model/post-type/film.php:17
+msgid "New Film"
+msgstr "Nouveau film"
+
+#: ../model/post-type/film.php:18
+msgid "Edit Film"
+msgstr "Editer un film"
+
+#: ../model/post-type/film.php:19
+msgid "Update Film"
+msgstr "Mis à jour du film"
+
+#: ../model/post-type/film.php:20
+msgid "View Film"
+msgstr "Voir le film"
+
+#: ../model/post-type/film.php:21
+msgid "Search Film"
+msgstr "Rechercher un film"
+
+#: ../model/post-type/film.php:22
+msgid "Not found"
+msgstr "Désolé, nous n’avons pas trouvé"
+
+#: ../model/post-type/film.php:23
+msgid "Not found in Trash"
+msgstr "Désolé, nous n’avons pas trouvé dans la corbeille"
+
+#: ../model/post-type/film.php:33
+msgid "List of movies playing at spoutnik"
+msgstr "Liste des films joués au Spoutnik"
+
+#: ../model/taxonomy/couleur.php:10
+msgid "Couleurs"
+msgstr "Couleurs"
+
+#: ../model/taxonomy/couleur.php:11
+msgid "All couleurs"
+msgstr "Toutes les couleurs"
+
+#: ../model/taxonomy/couleur.php:12
+msgid "Parent couleur"
+msgstr "Couleur parente"
+
+#: ../model/taxonomy/couleur.php:13
+msgid "Parent couleur:"
+msgstr "Couleur parente :"
+
+#: ../model/taxonomy/couleur.php:14
+msgid "New couleur Name"
+msgstr "Nouveau nom de couleur"
+
+#: ../model/taxonomy/couleur.php:15
+msgid "Add New couleur"
+msgstr "Ajouter une nouvelle couleur"
+
+#: ../model/taxonomy/couleur.php:16
+msgid "Edit couleur"
+msgstr "Editer une couleur"
+
+#: ../model/taxonomy/couleur.php:17
+msgid "Update couleur"
+msgstr "Mettre à jour une couleur"
+
+#: ../model/taxonomy/couleur.php:18
+msgid "View couleur"
+msgstr "Voir une couleur"
+
+#: ../model/taxonomy/couleur.php:19
+msgid "Separate couleurs with commas"
+msgstr "Séparer les couleurs par des virgules"
+
+#: ../model/taxonomy/couleur.php:20
+msgid "Add or remove couleurs"
+msgstr "Ajouter ou effacer des couleurs"
+
+#: ../model/taxonomy/couleur.php:21 ../model/taxonomy/country.php:22
+#: ../model/taxonomy/cycle.php:21 ../model/taxonomy/director.php:22
+#: ../model/taxonomy/format.php:22 ../model/taxonomy/language.php:22
+#: ../model/taxonomy/year.php:22
+msgid "Choose from the most used"
+msgstr "Choissisez le plus utilisé"
+
+#: ../model/taxonomy/couleur.php:22
+msgid "Popular couleurs"
+msgstr "Couleurs populaire"
+
+#: ../model/taxonomy/couleur.php:23
+msgid "Search couleurs"
+msgstr "Rechercher dans les couleurs"
+
+#: ../model/taxonomy/country.php:12
+msgid "All Countries"
+msgstr "Tous pays"
+
+#: ../model/taxonomy/country.php:13
+msgid "Parent Country"
+msgstr "Pays parent"
+
+#: ../model/taxonomy/country.php:14
+msgid "Parent Country:"
+msgstr "Pays parent :"
+
+#: ../model/taxonomy/country.php:15
+msgid "New Country Name"
+msgstr "Nouveau nom de pays"
+
+#: ../model/taxonomy/country.php:16
+msgid "Add New Country"
+msgstr "Ajouter un nouveau pays"
+
+#: ../model/taxonomy/country.php:17
+msgid "Edit Country"
+msgstr "Editer un pays"
+
+#: ../model/taxonomy/country.php:18
+msgid "Update Country"
+msgstr "Mettre à jour un pays"
+
+#: ../model/taxonomy/country.php:19
+msgid "View Country"
+msgstr "Voir un pays"
+
+#: ../model/taxonomy/country.php:20
+msgid "Separate countries with commas"
+msgstr "Séparer les pays par des virgules"
+
+#: ../model/taxonomy/country.php:21
+msgid "Add or remove countries"
+msgstr "Ajouter ou effacer des pays"
+
+#: ../model/taxonomy/country.php:23
+msgid "Popular countries"
+msgstr "Pays populaires"
+
+#: ../model/taxonomy/country.php:24
+msgid "Search countries"
+msgstr "Rechercher dans les pays"
+
+#: ../model/taxonomy/cycle.php:11
+msgid "All Cycles"
+msgstr "Tous les cycles"
+
+#: ../model/taxonomy/cycle.php:12
+msgid "Parent Cycle"
+msgstr "Cycle parent"
+
+#: ../model/taxonomy/cycle.php:13
+msgid "Parent Cycle:"
+msgstr "Cycle parent :"
+
+#: ../model/taxonomy/cycle.php:14
+msgid "New Cycle Name"
+msgstr "Nouveau nom de cycle"
+
+#: ../model/taxonomy/cycle.php:15
+msgid "Add New Cycle"
+msgstr "Ajouter un nouveau cycle"
+
+#: ../model/taxonomy/cycle.php:16
+msgid "Edit Cycle"
+msgstr "Editer un cycle"
+
+#: ../model/taxonomy/cycle.php:17
+msgid "Update Cycle"
+msgstr "Mis à jour d’un cycle"
+
+#: ../model/taxonomy/cycle.php:18
+msgid "View Cycle"
+msgstr "Voir le cycle"
+
+#: ../model/taxonomy/cycle.php:19
+msgid "Separate cycles with commas"
+msgstr "Séparer les cycles avec des virgules"
+
+#: ../model/taxonomy/cycle.php:20
+msgid "Add or remove cycles"
+msgstr "Ajouter un effacer des cycles"
+
+#: ../model/taxonomy/cycle.php:22
+msgid "Popular Cycles"
+msgstr "Cycles populaires"
+
+#: ../model/taxonomy/cycle.php:23
+msgid "Search Cycles"
+msgstr "Rechercher dans les cycles"
+
+#: ../model/taxonomy/director.php:12
+msgid "All Directors"
+msgstr "Tous les réalisateurs"
+
+#: ../model/taxonomy/director.php:13
+msgid "Parent Director"
+msgstr "Réalisateur parent"
+
+#: ../model/taxonomy/director.php:14
+msgid "Parent Director:"
+msgstr "Réalisateur parent :"
+
+#: ../model/taxonomy/director.php:15
+msgid "New Director Name"
+msgstr "Nouveau Réalisateur"
+
+#: ../model/taxonomy/director.php:16
+msgid "Add New Director"
+msgstr "Ajouter nouveau Réalisateur"
+
+#: ../model/taxonomy/director.php:17
+msgid "Edit Director"
+msgstr "Editer le Réalisateur"
+
+#: ../model/taxonomy/director.php:18
+msgid "Update Director"
+msgstr "Mis à jour du réalisateur"
+
+#: ../model/taxonomy/director.php:19
+msgid "View Director"
+msgstr "Voir le ou la réalisateurs"
+
+#: ../model/taxonomy/director.php:20
+msgid "Separate directors with commas"
+msgstr "Séparer les réalisateurs par des virgules"
+
+#: ../model/taxonomy/director.php:21
+msgid "Add or remove directors"
+msgstr "Ajouter ou effacer un réalisateur"
+
+#: ../model/taxonomy/director.php:23
+msgid "Popular Directors"
+msgstr "Réalisateurs populaires"
+
+#: ../model/taxonomy/director.php:24
+msgid "Search Directors"
+msgstr "Rechercher dans les réalisateur"
+
+#: ../model/taxonomy/format.php:11 ../templates/content-single-film.php:88
+msgid "Format"
+msgstr "Format"
+
+#: ../model/taxonomy/format.php:12
+msgid "All Formats"
+msgstr "Tous les formats"
+
+#: ../model/taxonomy/format.php:13
+msgid "Parent Format"
+msgstr "Format parent"
+
+#: ../model/taxonomy/format.php:14
+msgid "Parent Format:"
+msgstr "Format parent :"
+
+#: ../model/taxonomy/format.php:15
+msgid "New Format Name"
+msgstr "Nouveau nom de format"
+
+#: ../model/taxonomy/format.php:16
+msgid "Add New Format"
+msgstr "Ajouter un nouveau format"
+
+#: ../model/taxonomy/format.php:17
+msgid "Edit Format"
+msgstr "Editer un format"
+
+#: ../model/taxonomy/format.php:18
+msgid "Update Format"
+msgstr "Mis à jour d’un format"
+
+#: ../model/taxonomy/format.php:19
+msgid "View Format"
+msgstr "Voir le format"
+
+#: ../model/taxonomy/format.php:20
+msgid "Separate Formats with commas"
+msgstr "Séparer les formats avec des virgules"
+
+#: ../model/taxonomy/format.php:21
+msgid "Add or remove Formats"
+msgstr "Ajouter ou effacer des formats"
+
+#: ../model/taxonomy/format.php:23
+msgid "Popular Formats"
+msgstr "Formats populaire"
+
+#: ../model/taxonomy/format.php:24
+msgid "Search Formats"
+msgstr "Rechercher dans les formats"
+
+#: ../model/taxonomy/language.php:11 ../templates/content-single-film.php:81
+msgid "Language"
+msgstr "Langue"
+
+#: ../model/taxonomy/language.php:12
+msgid "All Languages"
+msgstr "Tous les languages"
+
+#: ../model/taxonomy/language.php:13
+msgid "Parent Language"
+msgstr "Language parent"
+
+#: ../model/taxonomy/language.php:14
+msgid "Parent Language:"
+msgstr "Langage parent :"
+
+#: ../model/taxonomy/language.php:15
+msgid "New Language Name"
+msgstr "Nouveau nom de language"
+
+#: ../model/taxonomy/language.php:16
+msgid "Add New Language"
+msgstr "Ajouter un nouveau langage"
+
+#: ../model/taxonomy/language.php:17
+msgid "Edit Language"
+msgstr "Editer un langage"
+
+#: ../model/taxonomy/language.php:18
+msgid "Update Language"
+msgstr "Mis à jour d’un language"
+
+#: ../model/taxonomy/language.php:19
+msgid "View Language"
+msgstr "Voir le language"
+
+#: ../model/taxonomy/language.php:20
+msgid "Separate Languages with commas"
+msgstr "Séparer les languages avec des virgules"
+
+#: ../model/taxonomy/language.php:21
+msgid "Add or remove Languages"
+msgstr "Ajouter ou effacer des langues"
+
+#: ../model/taxonomy/language.php:23
+msgid "Popular Languages"
+msgstr "Langues populaires"
+
+#: ../model/taxonomy/language.php:24
+msgid "Search Languages"
+msgstr "Rechercher dans les langues"
+
+#: ../model/taxonomy/year.php:11 ../templates/content-single-film.php:75
+msgid "Year"
+msgstr "Année"
+
+#: ../model/taxonomy/year.php:12
+msgid "All Years"
+msgstr "Toutes les années"
+
+#: ../model/taxonomy/year.php:13
+msgid "Parent Year"
+msgstr "Année parente"
+
+#: ../model/taxonomy/year.php:14
+msgid "Parent Year:"
+msgstr "Année parente"
+
+#: ../model/taxonomy/year.php:15
+msgid "New Year Name"
+msgstr "Nouveau nom d’année"
+
+#: ../model/taxonomy/year.php:16
+msgid "Add New Year"
+msgstr "Ajouter une nouvelle année"
+
+#: ../model/taxonomy/year.php:17
+msgid "Edit Year"
+msgstr "Editer une année"
+
+#: ../model/taxonomy/year.php:18
+msgid "Update Year"
+msgstr "Mis à jour de l’année"
+
+#: ../model/taxonomy/year.php:19
+msgid "View Year"
+msgstr "Voir l’année"
+
+#: ../model/taxonomy/year.php:20
+msgid "Separate years with commas"
+msgstr "Séparer les années avec des virgules"
+
+#: ../model/taxonomy/year.php:21
+msgid "Add or remove years"
+msgstr "Ajouter ou effacer des années"
+
+#: ../model/taxonomy/year.php:23
+msgid "Popular years"
+msgstr "Années populaires"
+
+#: ../model/taxonomy/year.php:24
+msgid "Search years"
+msgstr "Rechercher dans les années"
+
+#: ../piklist/parts/meta-boxes/event.php:12
+msgid "Date"
+msgstr "Date"
+
+#: ../piklist/parts/meta-boxes/event.php:20
+msgid "Heure"
+msgstr "Heure"
+
+#: ../piklist/parts/meta-boxes/event.php:26
+msgid "Adresse"
+msgstr "Adresse"
+
+#: ../piklist/parts/meta-boxes/event.php:32
+msgid "Embeded Google Maps "
+msgstr "Embeded Google Maps "
+
+#: ../piklist/parts/meta-boxes/film.php:10
+msgid "Date(s)"
+msgstr "Date·s"
+
+#: ../piklist/parts/meta-boxes/film.php:18
+msgid "Heure(s)"
+msgstr "Heure·s"
+
+#: ../piklist/parts/meta-boxes/film.php:25
+msgid "Schedule"
+msgstr "Planning"
+
+#: ../piklist/parts/meta-boxes/film.php:44
+#: ../templates/content-single-film.php:94
+msgid "Duration"
+msgstr "Durée"
+
+#: ../piklist/parts/meta-boxes/film.php:52
+msgid "Movie trailer"
+msgstr "Bande annonce"
+
+#: ../piklist/parts/meta-boxes/film.php:53
+msgid "Add the youtube/vimeo ID"
+msgstr "Ajouter une vidéo grâce au ID (YouTube ou Viméo uniquement)"
+
+#: ../piklist/parts/meta-boxes/film.php:67
+msgid "Actor(s)"
+msgstr "Acteur·rice·s"
+
+#: ../piklist/parts/meta-boxes/film.php:75
+msgid "Slider texte"
+msgstr "Texte du slider"
+
+#: ../piklist/parts/meta-boxes/film.php:76
+msgid ""
+"Use this field only if you want to display this message on the slider in the "
+"landing page"
+msgstr ""
+"Utilisez ce champs uniquement si vous voulez afficher un message dans le "
+"slider de la page d'accueil"
+
+#: ../piklist/parts/settings/demo-settings.php:50
+msgid "Cinema address"
+msgstr "Adresse du cinéma"
+
+#: ../piklist/parts/settings/demo-settings.php:57
+msgid "Google maps Cinema"
+msgstr "Google map"
+
+#: ../piklist/parts/settings/demo-settings.php:64
+msgid "Office address"
+msgstr "Bureau"
+
+#: ../piklist/parts/settings/demo-settings.php:71
+msgid "Google maps office"
+msgstr "Plan Google maps du bureau"
+
+#: ../piklist/parts/settings/demo-settings.php:78
+msgid "Phone"
+msgstr "Téléphone"
+
+#: ../piklist/parts/settings/demo-settings.php:85
+msgid "Email"
+msgstr "Email"
+
+#: ../piklist/parts/settings/demo-settings.php:99
+#: ../templates/sidebar-menu.php:88 ../templates/sidebar-menu.php:181
+msgid "Opening hours"
+msgstr "Heures d’ouverture"
+
+#: ../piklist/parts/settings/demo-settings.php:106
+msgid "Download full program PDF"
+msgstr "Télécharger le programme complet PDF"
+
+#: ../piklist/parts/settings/demo-settings.php:113
+msgid "Organisers"
+msgstr "Permanence"
+
+#: ../piklist/parts/settings/demo-settings.php:120
+msgid "Committee"
+msgstr "Le comité"
+
+#: ../piklist/parts/settings/demo-settings.php:127
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../templates/comments.php:19
+msgid "&larr; Older comments"
+msgstr "&larr; Commentaires anciens"
+
+#: ../templates/comments.php:22
+msgid "Newer comments &rarr;"
+msgstr "Commentaires récents &rarr;"
+
+#: ../templates/comments.php:31
+msgid "Comments are closed."
+msgstr "Commentaires fermés."
+
+#: ../templates/content-page.php:2 ../templates/content-single-film.php:128
+#: ../templates/content-single.php:15
+msgid "Pages:"
+msgstr "Pages:"
+
+#: ../templates/content-single-film.php:51
+msgid "Director"
+msgstr "Réalisation"
+
+#: ../templates/content-single-film.php:102
+msgid "Actors"
+msgstr "Avec"
+
+#: ../templates/content-single-film.php:111
+msgid "Website"
+msgstr "Website"
+
+#: ../templates/entry-meta.php:2
+msgid "By"
+msgstr "Par"
+
+#: ../templates/footer.php:23 ../templates/sidebar-menu.php:75
+#: ../templates/sidebar-menu.php:168
+msgid "CONTACT"
+msgstr "CONTACT"
+
+#: ../templates/program/day.php:3
+msgid "Today"
+msgstr "Aujourd’hui"
+
+#: ../templates/program/month.php:19
+msgid "Next 30 days"
+msgstr "Prochainement"
+
+#: ../templates/program/week.php:79
+msgid "Next 20 days"
+msgstr "Prochainement"
+
+#: ../templates/searchform.php:3
+msgid "Search"
+msgstr "Recherche"
+
+#: ../templates/sidebar-menu.php:40 ../templates/sidebar-menu.php:133
+msgid "TARIFS"
+msgstr "TARIFS"
+
+#: ../templates/sidebar-menu.php:46 ../templates/sidebar-menu.php:139
+msgid "normal "
+msgstr "normal"
+
+#: ../templates/sidebar-menu.php:50 ../templates/sidebar-menu.php:143
+msgid "reduction "
+msgstr "réduit"
+
+#: ../templates/sidebar-menu.php:54 ../templates/sidebar-menu.php:147
+msgid "infant "
+msgstr "enfant"
+
+#: ../templates/sidebar-menu.php:58 ../templates/sidebar-menu.php:151
+msgid "20years/20francs"
+msgstr "20ans/20francs"
+
+#: ../templates/sidebar-menu.php:62 ../templates/sidebar-menu.php:155
+msgid "member "
+msgstr "membre"
+
+#: ../templates/sidebar-menu.php:71 ../templates/sidebar-menu.php:164
+msgid "En vente à la billetterie du Spoutnik"
+msgstr "En vente à la billetterie du Spoutnik"
+
+#: ../templates/sidebar-menu.php:80 ../templates/sidebar-menu.php:173
+msgid "Cinéma Spoutnik"
+msgstr "Cinéma Spoutnik"
+
+#: ../templates/sidebar-menu.php:83 ../templates/sidebar-menu.php:176
+msgid "Spoutnik Office"
+msgstr "Bureau du Spoutnik"
+
+#: ../templates/sidebar-menu.php:92 ../templates/sidebar-menu.php:185
+msgid "Irregular schedule"
+msgstr "Horaires irréguliers"
+
+#: ../templates/sidebar-menu.php:97 ../templates/sidebar-menu.php:190
+msgid "ORGANISERS: "
+msgstr "PERMANENCE: "
+
+#: ../templates/sidebar-menu.php:101 ../templates/sidebar-menu.php:194
+msgid "THE COMMITTEE:"
+msgstr "LE COMITÉ"
+
+#: ../templates/sidebar-menu.php:106 ../templates/sidebar-menu.php:200
+msgid "INFO"
+msgstr "INFO"
+
+#: ../templates/today-films.php:22
+msgid "More info"
+msgstr "Plus d’infos"
+
+#: ../templates/today-films.php:27
+msgid "Director: "
+msgstr "Réalisation:"
+
+#: ../templates/today-films.php:35
+msgid "Country: "
+msgstr "Pays :"
+
+#: ../templates/today-films.php:43
+msgid "Year: "
+msgstr "Année :"
+
+#: ../templates/today-films.php:51
+msgid "Language: "
+msgstr "Langue :"
+
+#: ../templates/today-films.php:59
+msgid "Format: "
+msgstr "Format :"
+
+#: ../templates/today-films.php:65
+msgid "Duration: "
+msgstr "Durée :"
+
+#: ../templates/today-films.php:92
+msgid "Nothing at Spoutnik for today!"
+msgstr "Rien pour aujourd’hui au Spoutnik !"
+
+#~ msgid "Parent Event:"
+#~ msgstr "Parent de l’évènement :"
+
+#~ msgid "All Events"
+#~ msgstr "Tous les évènements"
+
+#~ msgid "Add New Event"
+#~ msgstr "Ajouter un nouvel évènement"
+
+#~ msgid "New Event"
+#~ msgstr "Nouvel évènement"
+
+#~ msgid "Edit Event"
+#~ msgstr "Editer un évènement"
+
+#~ msgid "Update Event"
+#~ msgstr "Mettre à jour l’évènement"
+
+#~ msgid "View Event"
+#~ msgstr "Voir l’évènement"
+
+#~ msgid "Search Event"
+#~ msgstr "Rechercher un évènement"
+
+#~ msgid "Event"
+#~ msgstr "Evènement"
+
+#~ msgid "This week"
+#~ msgstr "Cette semaine"
+
+#~ msgid "This month"
+#~ msgstr "Ce mois"
+
+#~ msgid "Search for:"
+#~ msgstr "Rechercher:"
+
+#~ msgctxt "comments title"
+#~ msgid "One response to &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Une réponse à &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s réponses à &ldquo;%2$s&rdquo;"
+
+#~ msgid "Sage Starter Theme"
+#~ msgstr "Sage Thème Starter"
+
+#~ msgid "https://roots.io/sage/"
+#~ msgstr "https://roots.io/sage/"
+
+#~ msgid ""
+#~ "Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage"
+#~ "\">Contribute on GitHub</a>"
+#~ msgstr ""
+#~ "Sage est un thème de démarrage WordPress (Starter Theme). <a href="
+#~ "\"https://github.com/roots/sage\">Contribuer sur GitHub</a>"
+
+#~ msgid "Roots"
+#~ msgstr "Roots"
+
+#~ msgid "https://roots.io/"
+#~ msgstr "https://roots.io/"
+
+#~ msgid "Custom Template"
+#~ msgstr "Custom Template "
