@@ -8,7 +8,7 @@
       <h2 class="entry-title"><a href="@php(the_permalink())" class="title-link">@php( the_title() )</a></h2>
 
       @if ( get_post_meta($post->ID,'film_landing',true) )
-        <h4>{{ get_post_meta($post->ID,'film_landing',true)}}</h4>
+        <h4>@php( echo get_post_meta($post->ID,'film_landing',true) )</h4>
       @endif
     </header>
     <br>
