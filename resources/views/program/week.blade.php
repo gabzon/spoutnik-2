@@ -1,7 +1,3 @@
-@php
-use DateTime;
-@endphp
-
 <?php
 $args = array (
   'post_type'=> array( 'film' ),

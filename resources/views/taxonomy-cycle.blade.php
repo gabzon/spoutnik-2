@@ -2,7 +2,7 @@
 
 @section('content')
   {{-- @include('partials.page-header') --}}
-
+  <br>
   @if (!have_posts())
     <div class="alert alert-warning">
       {{ __('Sorry, no results were found.', 'sage') }}
@@ -20,7 +20,7 @@
       </div>
       <div class="seven wide column">
         @php
-          echo term_description( $term_id, $taxonomy );
+        echo term_description( $term_id, $taxonomy );
         @endphp
       </div>
       <div class="one wide column"></div>

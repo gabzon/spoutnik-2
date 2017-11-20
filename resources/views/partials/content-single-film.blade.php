@@ -1,5 +1,6 @@
 <article @php(post_class())>
   <div class="ui container" id="the-movie">
+    <br>
     <div class="ui grid stackable">
       <div class="one wide column">
       </div>
