@@ -71,7 +71,11 @@
                 <img src="{{ $key['image'][0] }}" alt="" class="ui image"/>
               </a>
               <h2 class="entry-title"><a href="{{ $key['link'] }}" class="title-link">{{ $key['title'] }}</a></h2>
-              <h4>{{ $key['tagline'] }}</h4>
+              <h4>
+                @php
+                  echo $key['tagline'];
+                @endphp
+              </h4>
             </header>
             <br>
             <div class="entry-summary">
