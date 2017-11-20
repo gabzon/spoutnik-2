@@ -9,10 +9,43 @@
   text-transform: none;
 }
 
+// @font-face {
+//   font-family: 'Suisse_Intl';
+//   src: url("../fonts/SuisseIntl-Medium-WebXL.eot");
+//   src: url("../fonts/SuisseIntl-Medium-WebXL.woff2") format('woff'), url("../fonts/SuisseIntl-Medium-WebXL.woff") format('woff'), url("../fonts/SuisseIntl-Medium-WebXL.ttf") format('truetype'), url("../fonts/SuisseIntl-Medium-WebXL.svg") format('svg');
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-decoration: inherit;
+//   text-transform: none;
+// }
+
 @font-face {
-  font-family: 'Suisse Intl';
-  src: url("../fonts/SuisseIntl-Medium-WebXL.eot");
-  src: url("../fonts/SuisseIntl-Medium-WebXL.woff2") format('woff'), url("../fonts/SuisseIntl-Medium-WebXL.woff") format('woff'), url("../fonts/SuisseIntl-Medium-WebXL.ttf") format('truetype'), url("../fonts/SuisseIntl-Medium-WebXL.svg") format('svg');
+  font-family: 'Suisse_Intl';
+  src: url("http://localhost/spoutnik/wp-content/theme/spoutnik-2/dist/fonts/SuisseIntl-Medium-WebXL.eot");
+  src: url("http://localhost/spoutnik/wp-content/theme/spoutnik-2/dist/fonts/SuisseIntl-Medium-WebXL.woff2") format('woff'), url("http://localhost/spoutnik/wp-content/theme/spoutnik-2/dist/fonts/SuisseIntl-Medium-WebXL.woff") format('woff'), url("http://localhost/spoutnik/wp-content/theme/spoutnik-2/dist/fonts/SuisseIntl-Medium-WebXL.ttf") format('truetype'), url("http://localhost/spoutnik/wp-content/theme/spoutnik-2/dist/fonts/SuisseIntl-Medium-WebXL.svg") format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+// @font-face {
+//   font-family: 'Suisse_Neue';
+//   src: url(../fonts/SuisseNeue-Regular-WebXL.eot);
+//   src: url(../fonts/SuisseNeue-Regular-WebXL.woff2) format('woff'), url(../fonts/SuisseNeue-Regular-WebXL.woff) format('woff'), url(../fonts/SuisseNeue-Regular-WebXL.ttf) format('truetype'), url(../fonts/SuisseNeue-Regular-WebXL.svg) format('svg');
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-decoration: inherit;
+//   text-transform: none;
+// }
+
+@font-face {
+  font-family: 'Suisse_Neue';
+  src: url("http://localhost/spoutnik/wp-content/themes/spoutnik-2/resources/assets/fonts/SuisseNeue-Regular-WebXL.eot");
+  src: url("http://localhost/spoutnik/wp-content/themes/spoutnik-2/resources/assets/fonts/SuisseNeue-Regular-WebXL.woff2") format('woff'), url("http://localhost/spoutnik/wp-content/themes/spoutnik-2/resources/assets/fonts/SuisseNeue-Regular-WebXL.woff") format('woff'), url("http://localhost/spoutnik/wp-content/themes/spoutnik-2/resources/assets/fonts/SuisseNeue-Regular-WebXL.ttf") format('truetype'), url("http://localhost/spoutnik/wp-content/themes/spoutnik-2/resources/assets/fonts/SuisseNeue-Regular-WebXL.svg") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -21,18 +54,7 @@
 }
 
 @font-face {
-  font-family: 'Suisse Neue';
-  src: url("../fonts/SuisseNeue-Regular-WebXL.eot");
-  src: url("../fonts/SuisseNeue-Regular-WebXL.woff2") format('woff'), url("../fonts/SuisseNeue-Regular-WebXL.woff") format('woff'), url("../fonts/SuisseNeue-Regular-WebXL.ttf") format('truetype'), url("../fonts/SuisseNeue-Regular-WebXL.svg") format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
-
-@font-face {
-  font-family: 'Suisse Works';
+  font-family: 'Suisse_Works';
   src: url("../fonts/SuisseWorks-Medium-WebXL.eot");
   src: url("../fonts/SuisseWorks-Medium-WebXL.woff2") format('woff'), url("../fonts/SuisseWorks-Medium-WebXL.woff") format('woff'), url("../fonts/SuisseWorks-Medium-WebXL.ttf") format('truetype'), url("../fonts/SuisseWorks-Medium-WebXL.svg") format('svg');
   font-style: normal;
