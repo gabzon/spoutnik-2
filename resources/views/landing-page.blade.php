@@ -70,8 +70,18 @@ $full_program = $theme_options['spoutnik_programme_complet'];
 
           {{-- https://wordpress.stackexchange.com/questions/268162/get-excerpt-from-post-post-content --}}
           {{-- echo wp_trim_excerpt(); --}}
-          @php( the_excerpt() )
-
+          v1:
+          @php
+            the_excerpt()
+          @endphp
+          <br>
+          v2:
+          {{ get_the_excerpt() }}
+          <br>
+          v3:
+          @php
+            echo get_the_excerpt();
+          @endphp
         </div>
         <div class="four wide column">
           @php($image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full') )
