@@ -82,6 +82,8 @@ $full_program = $theme_options['spoutnik_programme_complet'];
           @php
             echo get_the_excerpt();
           @endphp
+          v4
+          <?php echo 'hola'; ?>
         </div>
         <div class="four wide column">
           @php($image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full') )
