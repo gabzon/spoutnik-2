@@ -53,7 +53,7 @@
         'image'       => wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full'),
         'title'       => get_the_title(),
         'link'        => get_the_permalink(),
-        'tagline'     => get_post_meta($post->ID,'film_landing',true),
+        'tagline'     => get_post_meta(get_the_ID(),'film_landing',true),
         'description' => get_the_excerpt()
       ];
       array_push($program, $movie_detail);
@@ -75,7 +75,9 @@
             </header>
             <br>
             <div class="entry-summary">
-              {{ $key['description'] }}
+              @php
+                echo $key['description'];
+              @endphp
             </div>
           </article>
         </div>
