@@ -72,7 +72,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
           {{-- echo wp_trim_excerpt(); --}}
           v1:
           @php
-            the_excerpt()
+            the_excerpt($post)
           @endphp
           <br>
           v2:
@@ -87,7 +87,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
           <?php echo 'hola'; ?>
           <br>
           v5:
-          <?php the_excerpt(); ?>
+          <?php the_excerpt($post); ?>
         </div>
         <div class="four wide column">
           @php($image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full') )
