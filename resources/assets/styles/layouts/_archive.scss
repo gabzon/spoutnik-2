@@ -18,3 +18,14 @@ a.country {
 a:hover.country {
   color: darken(darkgrey, 25%);
 }
+
+.nav-tabs .nav-link {
+  color: darken(darkgrey, 25%);
+}
+
+.nav-tabs .nav-link.active {
+  background: none !important;
+  border: 0;
+  border-bottom: 2px solid black;
+  color: black;
+}

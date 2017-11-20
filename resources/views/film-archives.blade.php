@@ -40,18 +40,20 @@ function nestedCategories($cat){
 }
 @endphp
 
-
 @extends('layouts.app')
 
-
 @section('content')
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <div class="ui container">
     @while(have_posts()) @php(the_post())
       @include('partials.page-header')
       @include('partials.content-page')
       {{ get_the_category_list() }}
     @endwhile
-
 
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item">
@@ -75,21 +77,27 @@ function nestedCategories($cat){
     </ul>
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="cycles" role="tabpanel" aria-labelledby="cycles-tab">
+        <br>
         @include('archives.cycles')
       </div>
       <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
+        <br>
         @include('archives.events')
       </div>
       <div class="tab-pane fade" id="collaboration" role="tabpanel" aria-labelledby="collaboration-tab">
+        <br>
         @include('archives.collaborations')
       </div>
       <div class="tab-pane fade" id="director" role="tabpanel" aria-labelledby="director-tab">
+        <br>
         @include('archives.directors')
       </div>
       <div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
+        <br>
         @include('archives.country')
       </div>
       <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+        <br>
         @include('archives.monthly')
       </div>
     </div>
