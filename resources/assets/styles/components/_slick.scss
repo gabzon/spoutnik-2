@@ -11,3 +11,9 @@
 .slick-slide a:hover {
   color: white;
 }
+
+@media only screen and (min-width: 120px) and (max-width: 1020px) {
+  .slick {
+    display: none;
+  }
+}
