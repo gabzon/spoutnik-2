@@ -3,7 +3,7 @@
 @section('content')
   <br>
   <br>
-  <br>
+  <br>  
   {{-- @include('partials.page-header') --}}
 
   @if (!have_posts())

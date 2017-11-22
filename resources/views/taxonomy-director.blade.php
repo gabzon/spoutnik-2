@@ -4,8 +4,7 @@
   <br>
   <br>
   <br>
-  <br>
-  @include('partials.page-header')
+  {{-- @include('partials.page-header') --}}
 
   @if (!have_posts())
     <div class="alert alert-warning">
