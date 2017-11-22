@@ -112,7 +112,7 @@ $horaire = $theme_options['spoutnik_horaire'];
     </div>
 </div>
 
-<div id="sidebar-mobile-menu" class="ui right wide sidebar vertical menu computer only" style="background:<?php echo $colorpicker; ?>; color:#fefefe;">
+<div id="sidebar-mobile-menu" class="ui right wide sidebar vertical menu mobile only" style="background:<?php echo $colorpicker; ?>; color:#fefefe;">
 
     <div class="sidebar-container" style="margin:0 30px">
         <br>
@@ -124,7 +124,7 @@ $horaire = $theme_options['spoutnik_horaire'];
             </div>
             <div class="content active">
                 <p class="transition visible" style="display: block !important;">
-                    <?php dynamic_sidebar( 'primaire' ); ?>
+                    @php(dynamic_sidebar('sidebar-primary'))
                 </p>
             </div>
             <div class="title">
