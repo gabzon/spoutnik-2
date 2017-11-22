@@ -72,22 +72,20 @@ font-size:1.4rem;
 
   {{-- Mobile menu --}}
   <div class="mobile only row">
-
     <a href="<?= esc_url(home_url('/')); ?>" id="menu-image">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-spoutnik-2017.svg" width="200" style="margin-top:5px; margin-left:15px;" />
     </a>
 
     <div class="ui item right aligned" style="margin-left:0 !important;">
+      <a class="menu-mobile-btn right aligned" style="color:white; position:relative;text-align:right;cursor: pointer;"> <i class="sidebar icon"></i></a>
       <form role="search" method="get" action="<?= esc_url(home_url('/')); ?>" class="ml-3" style="padding:0;margin:0">
-        <div class="ui transparent icon input" style="color:white; font-size:1.8rem; margin-top:-5px; width: 110px;">
+        <div class="ui transparent left icon input" style="color:white; font-size:1.8rem; margin-top:-5px; width: 110px;">
           <input type="text" placeholder="" value="<?= get_search_query(); ?>" name="s" style="color:white;">
           <i class="search icon"></i>
         </div>
       </form>
     </div>
-    <div class="ui item right aligned" style="margin-left:0 !important;">
-      <a class="menu-mobile-btn right aligned" style="color:white; position:relative;text-align:right;cursor: pointer;"> <i class="sidebar icon"></i></a>
-    </div>
+
 
   </div>
 
@@ -97,15 +95,13 @@ font-size:1.4rem;
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-spoutnik-2017.svg" width="200" style="margin-top:5px; margin-left:15px;" />
     </a>
     <div class="ui item right aligned" style="margin-left:0 !important;">
+      <a class="menu-mobile-btn right aligned" style="color:white; position:relative;text-align:right;cursor: pointer;"> <i class="sidebar icon"></i></a>
       <form role="search" method="get" action="<?= esc_url(home_url('/')); ?>" class="ml-3" style="padding:0;margin:0">
-        <div class="ui transparent icon input" style="color:white; font-size:1.8rem; margin-top:-5px; width: 110px;">
+        <div class="ui transparent left icon input" style="color:white; font-size:1.8rem; margin-top:-5px; width: 110px;">
           <input type="text" placeholder="" value="<?= get_search_query(); ?>" name="s" style="color:white;">
           <i class="search icon"></i>
         </div>
       </form>
-    </div>
-    <div class="ui item right aligned" style="margin-left:0 !important;">
-      <a class="menu-mobile-btn right aligned" style="color:white; position:relative;text-align:right;cursor: pointer;"> <i class="sidebar icon"></i></a>
     </div>
   </div>
 

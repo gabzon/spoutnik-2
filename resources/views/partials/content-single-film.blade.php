@@ -6,7 +6,7 @@
       </div>
       <div class="fourteen wide column">
         <br><br>
-        <h1 class="entry-title black film-title tc" style="margin-bottom:0;">{{ get_the_title() }}</h1>
+        <h1 class="entry-title black film-title tc f1" style="margin-bottom:0;">{{ get_the_title() }}</h1>
         @if (get_post_meta($post->ID,'film_original_title',true))
           <h2 class="tc" style="margin:0;padding:0; color:#A8A8A8"><i>{{ get_post_meta($post->ID,'film_original_title',true) }}</i></h2>
         @endif
