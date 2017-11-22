@@ -78,9 +78,9 @@ font-size:1.4rem;
 
     <div class="ui item right aligned" style="margin-left:0 !important;">
       <a class="menu-mobile-btn right aligned" style="color:white; position:relative;text-align:right;cursor: pointer;"> <i class="sidebar icon"></i></a>
-      {{-- <form role="search" method="get" action="<?= esc_url(home_url('/')); ?>" class="ml-3" style="padding:0;margin:0">
+      {{-- <form role="search" method="get" action="{{ esc_url(home_url('/')) }}" class="ml-3" style="padding:0;margin:0">
         <div class="ui transparent left icon input" style="color:white; font-size:1.8rem; margin-top:-5px; width: 110px;">
-          <input type="text" placeholder="" value="<?= get_search_query(); ?>" name="s" style="color:white;">
+          <input type="text" placeholder="" value="{{ get_search_query() }}" name="s" style="color:white;">
           <i class="search icon"></i>
         </div>
       </form> --}}
@@ -96,9 +96,9 @@ font-size:1.4rem;
     </a>
     <div class="ui item right aligned" style="margin-left:0 !important;">
       <a class="menu-mobile-btn right aligned" style="color:white; position:relative;text-align:right;cursor: pointer;"> <i class="sidebar icon"></i></a>
-      {{-- <form role="search" method="get" action="<?= esc_url(home_url('/')); ?>" class="ml-3" style="padding:0;margin:0">
+      {{-- <form role="search" method="get" action="{{ esc_url(home_url('/')) }}" class="ml-3" style="padding:0;margin:0">
         <div class="ui transparent left icon input" style="color:white; font-size:1.8rem; margin-top:-5px; width: 110px;">
-          <input type="text" placeholder="" value="<?= get_search_query(); ?>" name="s" style="color:white;">
+          <input type="text" placeholder="" value="{{ get_search_query() }}" name="s" style="color:white;">
           <i class="search icon"></i>
         </div>
       </form> --}}
