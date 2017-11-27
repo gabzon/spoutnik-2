@@ -24,7 +24,9 @@ $query = new WP_Query( $args );
         <span class="white" style="position: absolute; bottom:30px; left: 50%; transform: translate(-50%, -50%);">
           <a href="@php( the_permalink() )" style="text-shadow: 1px 1px black;" class="white tc center f3">
             @php( the_title() ) <br>
-            {{ get_post_meta(get_the_ID(),'film_landing',true) }}
+            @php
+              echo get_post_meta(get_the_ID(),'film_landing',true);
+            @endphp
           </a>
         </span>
 
