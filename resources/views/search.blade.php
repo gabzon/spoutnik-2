@@ -5,6 +5,7 @@
   <br>
   <br>
   <br>
+  <br>
   <div class="ui container">
     @include('partials.page-header')
 
@@ -17,6 +18,7 @@
 
     @while(have_posts()) @php(the_post())
       @include('partials.content-search')
+      <br>
     @endwhile
 
     {!! get_the_posts_navigation() !!}
