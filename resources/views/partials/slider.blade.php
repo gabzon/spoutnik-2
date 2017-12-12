@@ -25,7 +25,7 @@ $query = new WP_Query( $args );
           <a href="@php( the_permalink() )" style="text-shadow: 1px 1px black;" class="white tc center f3">
             @php( the_title() ) <br>
             @php
-              echo get_post_meta(get_the_ID(),'film_landing',true);
+              echo get_post_meta(get_the_ID(),'film_landing',true);g
             @endphp
           </a>
         </span>
