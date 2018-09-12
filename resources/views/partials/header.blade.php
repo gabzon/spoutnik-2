@@ -1,5 +1,5 @@
 <style media="screen">
-  .row {padding:3 0 !important}  
+  .row {padding:3px 0 !important}  
 </style>
 
 <div class="ui fluid text three item menu fixed grid large" id="main-menu-front-page" style="background:black">
