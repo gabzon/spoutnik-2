@@ -62,6 +62,7 @@ array_map(function ($file) use ($sage_error) {
   'helpers', 'setup', 'filters', 'admin', 'default', 'sorting', 'spoutnik',
   'status',
   'taxonomy/couleur',
+  'taxonomy/distribution',
   'taxonomy/country',
   'taxonomy/cycle',
   'taxonomy/director',

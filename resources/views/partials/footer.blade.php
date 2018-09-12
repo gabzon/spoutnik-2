@@ -14,8 +14,8 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
 <footer class="bg-black white">
   <br>
   <div style="padding: 0 20px;">
-    <div class="ui grid column stackable">
-      <div class="four wide column sidebar-footer">
+    <div class="ui four column relaxed grid stackable">
+      <div class="column sidebar-footer">
         <h3 class="f4">ADRESSE</h3>
         <table width="100%">
           <tr style="border-top:1px solid #939393;">
@@ -35,11 +35,11 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
           </table>
           <?php //dynamic_sidebar('sidebar-footer'); ?>
         </div>
-        <div class="four wide column">
+        <div class="column">
           <h3 class="f4">INFOS</h3>
           <table width="100%">
             <tr style="border-top:1px solid #939393; border-bottom:1px solid #939393;">
-              <td valign="top" width="50%" style="padding:5px 0;"><h5 class="f6">PROGRAMMATION</h5></td>
+              <td valign="top" width="30%" style="padding:5px 0;"><h5 class="f6">PROGRAMME</h5></td>
               <td valign="top" style="padding:5px 0;">
                 <h5 class="f6">
                   Alice Riva<br>
@@ -73,11 +73,11 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
             </tr>
           </table>
         </div>
-        <div class="four wide column">
+        <div class="column">
           <h3 class="f4">TARIFS</h3>
           <table width="100%">
             <tr style="border-top:1px solid #939393 !important; border-bottom:1px solid #939393;">
-              <td valign="top" width="28%"style="padding:5px 0;">
+              <td valign="top" width="30%"style="padding:5px 0;">
                 <h5 class="f6">NORMAL</h5>
               </td>
               <td valign="top" style="padding:5px 0;">
@@ -118,7 +118,7 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
             </tr>
           </table>
         </div>
-        <div class="four wide column left aligned">
+        <div class="column left aligned">
           <h3 class="f4">ABO</h3>
           <table width="100%">
             <tr style="border-top:1px solid #939393; border-bottom:1px solid #939393;">

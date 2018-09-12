@@ -11,7 +11,7 @@
 
   @include('partials.sidebar-menu')
   <div class="pusher">
-      @include('partials.header-front')
+      @include('partials.header')
       <div class="wrap" role="document">
         @include('partials.slider')
         <div class="content">
