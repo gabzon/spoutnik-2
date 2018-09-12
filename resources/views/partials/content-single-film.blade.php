@@ -111,6 +111,13 @@
               </td>
             </tr>
 
+            <tr>
+              <td valign="top" width="40%"><h5><?php _e('Distribution','sage'); ?></h5></td>
+              <td>
+                <h5 style="color:black;"><?php the_terms( $post->ID, 'distribution', '', '<br>' ); ?></h5>
+              </td>
+            </tr>
+
             <?php if ($website): ?>
               <tr>
                 <td colspan="2">

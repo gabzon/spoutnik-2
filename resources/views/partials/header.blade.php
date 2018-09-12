@@ -1,3 +1,7 @@
+<style media="screen">
+  .row {padding:0 !important}
+</style>
+
 <div class="ui fluid text three item menu fixed grid large" id="main-menu-front-page" style="background:black">
 
   {{-- Mobile menu --}}

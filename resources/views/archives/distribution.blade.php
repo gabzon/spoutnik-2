@@ -1,24 +1,21 @@
 @php
-$cycle = array('cycle');
+$cycle = array('distribution');
 
 $args = array(
-    'orderby'           => 'name',
-    'order'             => 'ASC',
-    'hide_empty'        => true,
+  'orderby'           => 'name',
+  'order'             => 'ASC',
+  'hide_empty'        => true,
 );
 
 $cats = get_terms($cycle, $args);
-
-//piklist::pre($cats);
-foreach( $cats as $cat ) {
-    //echo $cat->name .' '. $cat->term_id . ' '. $cat->slug .'<br>';
-
-    if ($cat->slug === 'distribution') {
-        $term_id = $cat->term_id;
-        $taxonomy_name = 'cycle';
-        $termchildren = get_term_children( $term_id, $taxonomy_name );
-        display_order_alphabeticaly($termchildren, 'cycle');
-    }
-}
-
 @endphp
+
+@php
+  //piklist::pre($cats)
+@endphp
+
+<ul class="archives-links">
+  @foreach ($cats as $cat)
+    <li><a href="{{ get_term_link($cat->term_id,'distribution') }}" target="_blank">{{ $cat->name .' '. $cat->term_id . ' '. $cat->slug }}</a></li>
+  @endforeach
+</ul>
