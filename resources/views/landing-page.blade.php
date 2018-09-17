@@ -18,7 +18,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
         <div class="seven wide column">
           <br> @php( setlocale(LC_TIME, "fr_FR") )
           <h1 style="text-transform:uppercase">
-            {{ __('TODAY ','sage') }} <br>
+            {{ __('Aujourd\'hui ','sage') }} <br>
             {{ utf8_encode(strftime("%A %e %B")) }}
           </h1>
           <br>
@@ -35,7 +35,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
             <a href="<?= esc_url( $full_program ) ?>" style="color:black">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/journal-spoutnik-v3.svg" width="150" alt="" />
               <br>
-              {{ __('full program','sage') }}
+              {{ __('Programme complet','sage') }}
             </a>
           @endif
         </div>

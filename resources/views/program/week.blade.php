@@ -78,7 +78,7 @@ $hour = [];
   <div class="ui container">
     <div class="ui grid">
       <div class="sixteen wide column">
-        <h1><?php _e('Next 20 days','sage'); ?></h1>
+        <h1><?php _e('Prochainement','sage'); ?></h1>
       </div>
     </div>
     <div class="ui three column grid stackable">

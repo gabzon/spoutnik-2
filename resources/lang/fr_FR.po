@@ -1,0 +1,772 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Spoutnik\n"
+"POT-Creation-Date: 2018-09-17 16:00+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;__;_e;gettext\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPath-2: ../views\n"
+"X-Poedit-SearchPathExcluded-0: ../bower_components\n"
+"X-Poedit-SearchPathExcluded-1: ../node_modules\n"
+
+#: ../functions.php:17
+msgid "Sage &rsaquo; Error"
+msgstr ""
+
+#: ../functions.php:27
+msgid "You must be using PHP 7 or greater."
+msgstr ""
+
+#: ../functions.php:27
+msgid "Invalid PHP version"
+msgstr ""
+
+#: ../functions.php:34
+msgid "You must be using WordPress 4.7.0 or greater."
+msgstr ""
+
+#: ../functions.php:34
+msgid "Invalid WordPress version"
+msgstr ""
+
+#: ../functions.php:43
+msgid "You must run <code>composer install</code> from the Sage directory."
+msgstr ""
+
+#: ../functions.php:44
+msgid "Autoloader not found."
+msgstr ""
+
+#: ../functions.php:59
+#, php-format
+msgid "Error locating <code>%s</code> for inclusion."
+msgstr ""
+
+#: ../piklist/parts/meta-boxes/event.php:12
+msgid "Date"
+msgstr "Date"
+
+#: ../piklist/parts/meta-boxes/event.php:20
+msgid "Heure"
+msgstr "Heure"
+
+#: ../piklist/parts/meta-boxes/event.php:26
+msgid "Adresse"
+msgstr "Adresse"
+
+#: ../piklist/parts/meta-boxes/event.php:32
+msgid "Embeded Google Maps "
+msgstr "Embeded Google Maps "
+
+#: ../piklist/parts/settings/demo-settings.php:50
+msgid "Cinema address"
+msgstr "Adresse du cinéma"
+
+#: ../piklist/parts/settings/demo-settings.php:57
+msgid "Google maps Cinema"
+msgstr "Google map"
+
+#: ../piklist/parts/settings/demo-settings.php:64
+msgid "Office address"
+msgstr "Bureau"
+
+#: ../piklist/parts/settings/demo-settings.php:71
+msgid "Google maps office"
+msgstr "Plan Google maps du bureau"
+
+#: ../piklist/parts/settings/demo-settings.php:78
+msgid "Phone"
+msgstr "Téléphone"
+
+#: ../piklist/parts/settings/demo-settings.php:85
+msgid "Email"
+msgstr "Email"
+
+#: ../piklist/parts/settings/demo-settings.php:99
+#: ../views/partials/sidebar-menu.blade.php:86
+#: ../views/partials/sidebar-menu.blade.php:179
+msgid "Opening hours"
+msgstr "Heures d’ouverture"
+
+#: ../piklist/parts/settings/demo-settings.php:106
+msgid "Download full program PDF"
+msgstr "Télécharger le programme complet PDF"
+
+#: ../piklist/parts/settings/demo-settings.php:113
+msgid "Organisers"
+msgstr "Permanence"
+
+#: ../piklist/parts/settings/demo-settings.php:120
+msgid "Committee"
+msgstr "Le comité"
+
+#: ../piklist/parts/settings/demo-settings.php:127
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../piklist/parts/terms/country.php:12 ../piklist/parts/terms/cycle.php:12
+#: ../piklist/parts/terms/distribution.php:12
+msgid "Add image link URL"
+msgstr ""
+
+#: ../piklist/parts/terms/country.php:13 ../piklist/parts/terms/cycle.php:13
+#: ../piklist/parts/terms/distribution.php:13
+msgid "Image should have a width bigger than 980px"
+msgstr ""
+
+#: ../piklist/parts/terms/director.php:13
+msgid "Biography"
+msgstr ""
+
+#: ../piklist/parts/terms/director.php:20
+#: ../piklist/parts/terms/program.php:20
+msgid "Add Photo link URL"
+msgstr ""
+
+#: ../piklist/parts/terms/program.php:13
+msgid "Text"
+msgstr ""
+
+#: ../piklist/parts/terms/program.php:27
+msgid "Add Program link URL"
+msgstr ""
+
+#: ../views/partials/content-single-film.blade.php:55
+msgid "Director"
+msgstr "Réalisation"
+
+#: ../views/partials/content-single-film.blade.php:67
+msgid "Country"
+msgstr "Pays"
+
+#: ../views/partials/content-single-film.blade.php:79
+msgid "Year"
+msgstr "Année"
+
+#: ../views/partials/content-single-film.blade.php:85
+msgid "Language"
+msgstr "Langue"
+
+#: ../views/partials/content-single-film.blade.php:91
+msgid "Format"
+msgstr "Format"
+
+#: ../views/partials/content-single-film.blade.php:97
+msgid "Duration"
+msgstr "Durée"
+
+#: ../views/partials/content-single-film.blade.php:105
+msgid "Actors"
+msgstr "Avec"
+
+#: ../views/partials/content-single-film.blade.php:113
+msgid "Distribution"
+msgstr "Distribution"
+
+#: ../views/partials/content-single-film.blade.php:121
+msgid "Cycle"
+msgstr ""
+
+#: ../views/partials/content-single-film.blade.php:131
+msgid "Website"
+msgstr "Website"
+
+#: ../views/partials/sidebar-menu.blade.php:38
+#: ../views/partials/sidebar-menu.blade.php:131
+msgid "TARIFS"
+msgstr "TARIFS"
+
+#: ../views/partials/sidebar-menu.blade.php:44
+#: ../views/partials/sidebar-menu.blade.php:137
+msgid "normal "
+msgstr "normal"
+
+#: ../views/partials/sidebar-menu.blade.php:48
+#: ../views/partials/sidebar-menu.blade.php:141
+msgid "reduction "
+msgstr "réduit"
+
+#: ../views/partials/sidebar-menu.blade.php:52
+#: ../views/partials/sidebar-menu.blade.php:145
+msgid "infant "
+msgstr "enfant"
+
+#: ../views/partials/sidebar-menu.blade.php:56
+#: ../views/partials/sidebar-menu.blade.php:149
+msgid "20years/20francs"
+msgstr "20ans/20francs"
+
+#: ../views/partials/sidebar-menu.blade.php:60
+#: ../views/partials/sidebar-menu.blade.php:153
+msgid "member "
+msgstr "membre"
+
+#: ../views/partials/sidebar-menu.blade.php:69
+#: ../views/partials/sidebar-menu.blade.php:162
+msgid "En vente à la billetterie du Spoutnik"
+msgstr "En vente à la billetterie du Spoutnik"
+
+#: ../views/partials/sidebar-menu.blade.php:73
+#: ../views/partials/sidebar-menu.blade.php:166
+msgid "CONTACT"
+msgstr "CONTACT"
+
+#: ../views/partials/sidebar-menu.blade.php:78
+#: ../views/partials/sidebar-menu.blade.php:171
+msgid "Cinéma Spoutnik"
+msgstr "Cinéma Spoutnik"
+
+#: ../views/partials/sidebar-menu.blade.php:81
+#: ../views/partials/sidebar-menu.blade.php:174
+msgid "Spoutnik Office"
+msgstr "Bureau du Spoutnik"
+
+#: ../views/partials/sidebar-menu.blade.php:90
+#: ../views/partials/sidebar-menu.blade.php:183
+msgid "Irregular schedule"
+msgstr "Horaires irréguliers"
+
+#: ../views/partials/sidebar-menu.blade.php:95
+#: ../views/partials/sidebar-menu.blade.php:188
+msgid "ORGANISERS: "
+msgstr "PERMANENCE: "
+
+#: ../views/partials/sidebar-menu.blade.php:99
+#: ../views/partials/sidebar-menu.blade.php:192
+msgid "THE COMMITTEE:"
+msgstr "LE COMITÉ"
+
+#: ../views/partials/sidebar-menu.blade.php:104
+#: ../views/partials/sidebar-menu.blade.php:198
+msgid "INFO"
+msgstr "INFO"
+
+#: ../views/program/day.php:3
+msgid "Today"
+msgstr "Aujourd’hui"
+
+#: ../views/program/month.php:19
+msgid "Ce mois"
+msgstr ""
+
+#: ../views/program/week.blade.php:81
+msgid "Next 20 days"
+msgstr "Prochainement"
+
+#: ../views/taxonomy-program.blade.php:31
+msgid "Télécharger le programme"
+msgstr ""
+
+#: ../views/today-films.blade.php:22
+msgid "More info"
+msgstr "Plus d’infos"
+
+#: ../views/today-films.blade.php:27
+msgid "Director: "
+msgstr "Réalisation:"
+
+#: ../views/today-films.blade.php:35
+msgid "Country: "
+msgstr "Pays :"
+
+#: ../views/today-films.blade.php:43
+msgid "Year: "
+msgstr "Année :"
+
+#: ../views/today-films.blade.php:51
+msgid "Language: "
+msgstr "Langue :"
+
+#: ../views/today-films.blade.php:59
+msgid "Format: "
+msgstr "Format :"
+
+#: ../views/today-films.blade.php:66
+msgid "Duration: "
+msgstr "Durée :"
+
+#: ../views/today-films.blade.php:93
+msgid "Nothing at Spoutnik for today!"
+msgstr "Rien pour aujourd’hui au Spoutnik !"
+
+#~ msgid "Sorry, but the page you were trying to view does not exist."
+#~ msgstr "Désolé, nous n’avons trouvé ce que vous cherchez :-("
+
+#~ msgid "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience."
+#~ msgstr "Vous utilisez une version obsolète de votre navigateur. Veuillez le  <a href=\"http://browsehappy.com/\">mettre à jour</a> pour visionner correctement le site du Spoutnik ;)"
+
+#~ msgid "Custom Settings"
+#~ msgstr "Réglages personnalisés"
+
+#~ msgid "Settings"
+#~ msgstr "Réglages"
+
+#~ msgid "Save Settings"
+#~ msgstr "Sauvegarder les réglages"
+
+#~ msgid "Cycles"
+#~ msgstr "Cycles"
+
+#~ msgid "Events"
+#~ msgstr "Événements"
+
+#~ msgid "Collaborations"
+#~ msgstr "Collaborations"
+
+#~ msgid "Directors"
+#~ msgstr "Réalisation"
+
+#~ msgid "Monthly"
+#~ msgstr "Par mois"
+
+#~ msgid "Error locating %s for inclusion"
+#~ msgstr "Erreurr localiser %s pour inclusion"
+
+#~ msgid "Sorry, no results were found."
+#~ msgstr "Désolé, rien n'a été trouvé. :("
+
+#~ msgid "TODAY "
+#~ msgstr "AUJOURD’HUI"
+
+#~ msgid "full program"
+#~ msgstr "programme complet"
+
+#~ msgid "Also at Spoutnik"
+#~ msgstr "Focus"
+
+#~ msgid "Continued"
+#~ msgstr "Suite"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Navigation Primaire"
+
+#~ msgid "Primary"
+#~ msgstr "Primaire"
+
+#~ msgid "Footer"
+#~ msgstr "Pied de page"
+
+#~ msgid "Latest Posts"
+#~ msgstr "Articles Récents"
+
+#~ msgid "Search Results for %s"
+#~ msgstr "Résultats pour %s"
+
+#~ msgid "Not Found"
+#~ msgstr "Non Trouvé"
+
+#~ msgid "Films"
+#~ msgstr "Films"
+
+#~ msgid "Film"
+#~ msgstr "Film"
+
+#~ msgid "Parent Item:"
+#~ msgstr "Parent de l'article:"
+
+#~ msgid "All Films"
+#~ msgstr "Tous les films"
+
+#~ msgid "Add New Film"
+#~ msgstr "Ajouter un nouveau film"
+
+#~ msgid "Add New"
+#~ msgstr "Ajouter un nouveau"
+
+#~ msgid "New Film"
+#~ msgstr "Nouveau film"
+
+#~ msgid "Edit Film"
+#~ msgstr "Editer un film"
+
+#~ msgid "Update Film"
+#~ msgstr "Mis à jour du film"
+
+#~ msgid "View Film"
+#~ msgstr "Voir le film"
+
+#~ msgid "Search Film"
+#~ msgstr "Rechercher un film"
+
+#~ msgid "Not found"
+#~ msgstr "Désolé, nous n’avons pas trouvé"
+
+#~ msgid "Not found in Trash"
+#~ msgstr "Désolé, nous n’avons pas trouvé dans la corbeille"
+
+#~ msgid "List of movies playing at spoutnik"
+#~ msgstr "Liste des films joués au Spoutnik"
+
+#~ msgid "Couleurs"
+#~ msgstr "Couleurs"
+
+#~ msgid "All couleurs"
+#~ msgstr "Toutes les couleurs"
+
+#~ msgid "Parent couleur"
+#~ msgstr "Couleur parente"
+
+#~ msgid "Parent couleur:"
+#~ msgstr "Couleur parente :"
+
+#~ msgid "New couleur Name"
+#~ msgstr "Nouveau nom de couleur"
+
+#~ msgid "Add New couleur"
+#~ msgstr "Ajouter une nouvelle couleur"
+
+#~ msgid "Edit couleur"
+#~ msgstr "Editer une couleur"
+
+#~ msgid "Update couleur"
+#~ msgstr "Mettre à jour une couleur"
+
+#~ msgid "View couleur"
+#~ msgstr "Voir une couleur"
+
+#~ msgid "Separate couleurs with commas"
+#~ msgstr "Séparer les couleurs par des virgules"
+
+#~ msgid "Add or remove couleurs"
+#~ msgstr "Ajouter ou effacer des couleurs"
+
+#~ msgid "Choose from the most used"
+#~ msgstr "Choissisez le plus utilisé"
+
+#~ msgid "Popular couleurs"
+#~ msgstr "Couleurs populaire"
+
+#~ msgid "Search couleurs"
+#~ msgstr "Rechercher dans les couleurs"
+
+#~ msgid "All Countries"
+#~ msgstr "Tous pays"
+
+#~ msgid "Parent Country"
+#~ msgstr "Pays parent"
+
+#~ msgid "Parent Country:"
+#~ msgstr "Pays parent :"
+
+#~ msgid "New Country Name"
+#~ msgstr "Nouveau nom de pays"
+
+#~ msgid "Add New Country"
+#~ msgstr "Ajouter un nouveau pays"
+
+#~ msgid "Edit Country"
+#~ msgstr "Editer un pays"
+
+#~ msgid "Update Country"
+#~ msgstr "Mettre à jour un pays"
+
+#~ msgid "View Country"
+#~ msgstr "Voir un pays"
+
+#~ msgid "Separate countries with commas"
+#~ msgstr "Séparer les pays par des virgules"
+
+#~ msgid "Add or remove countries"
+#~ msgstr "Ajouter ou effacer des pays"
+
+#~ msgid "Popular countries"
+#~ msgstr "Pays populaires"
+
+#~ msgid "Search countries"
+#~ msgstr "Rechercher dans les pays"
+
+#~ msgid "All Cycles"
+#~ msgstr "Tous les cycles"
+
+#~ msgid "Parent Cycle"
+#~ msgstr "Cycle parent"
+
+#~ msgid "Parent Cycle:"
+#~ msgstr "Cycle parent :"
+
+#~ msgid "New Cycle Name"
+#~ msgstr "Nouveau nom de cycle"
+
+#~ msgid "Add New Cycle"
+#~ msgstr "Ajouter un nouveau cycle"
+
+#~ msgid "Edit Cycle"
+#~ msgstr "Editer un cycle"
+
+#~ msgid "Update Cycle"
+#~ msgstr "Mis à jour d’un cycle"
+
+#~ msgid "View Cycle"
+#~ msgstr "Voir le cycle"
+
+#~ msgid "Separate cycles with commas"
+#~ msgstr "Séparer les cycles avec des virgules"
+
+#~ msgid "Add or remove cycles"
+#~ msgstr "Ajouter un effacer des cycles"
+
+#~ msgid "Popular Cycles"
+#~ msgstr "Cycles populaires"
+
+#~ msgid "Search Cycles"
+#~ msgstr "Rechercher dans les cycles"
+
+#~ msgid "All Directors"
+#~ msgstr "Tous les réalisateurs"
+
+#~ msgid "Parent Director"
+#~ msgstr "Réalisateur parent"
+
+#~ msgid "Parent Director:"
+#~ msgstr "Réalisateur parent :"
+
+#~ msgid "New Director Name"
+#~ msgstr "Nouveau Réalisateur"
+
+#~ msgid "Add New Director"
+#~ msgstr "Ajouter nouveau Réalisateur"
+
+#~ msgid "Edit Director"
+#~ msgstr "Editer le Réalisateur"
+
+#~ msgid "Update Director"
+#~ msgstr "Mis à jour du réalisateur"
+
+#~ msgid "View Director"
+#~ msgstr "Voir le ou la réalisateurs"
+
+#~ msgid "Separate directors with commas"
+#~ msgstr "Séparer les réalisateurs par des virgules"
+
+#~ msgid "Add or remove directors"
+#~ msgstr "Ajouter ou effacer un réalisateur"
+
+#~ msgid "Popular Directors"
+#~ msgstr "Réalisateurs populaires"
+
+#~ msgid "Search Directors"
+#~ msgstr "Rechercher dans les réalisateur"
+
+#~ msgid "All Formats"
+#~ msgstr "Tous les formats"
+
+#~ msgid "Parent Format"
+#~ msgstr "Format parent"
+
+#~ msgid "Parent Format:"
+#~ msgstr "Format parent :"
+
+#~ msgid "New Format Name"
+#~ msgstr "Nouveau nom de format"
+
+#~ msgid "Add New Format"
+#~ msgstr "Ajouter un nouveau format"
+
+#~ msgid "Edit Format"
+#~ msgstr "Editer un format"
+
+#~ msgid "Update Format"
+#~ msgstr "Mis à jour d’un format"
+
+#~ msgid "View Format"
+#~ msgstr "Voir le format"
+
+#~ msgid "Separate Formats with commas"
+#~ msgstr "Séparer les formats avec des virgules"
+
+#~ msgid "Add or remove Formats"
+#~ msgstr "Ajouter ou effacer des formats"
+
+#~ msgid "Popular Formats"
+#~ msgstr "Formats populaire"
+
+#~ msgid "Search Formats"
+#~ msgstr "Rechercher dans les formats"
+
+#~ msgid "All Languages"
+#~ msgstr "Tous les languages"
+
+#~ msgid "Parent Language"
+#~ msgstr "Language parent"
+
+#~ msgid "Parent Language:"
+#~ msgstr "Langage parent :"
+
+#~ msgid "New Language Name"
+#~ msgstr "Nouveau nom de language"
+
+#~ msgid "Add New Language"
+#~ msgstr "Ajouter un nouveau langage"
+
+#~ msgid "Edit Language"
+#~ msgstr "Editer un langage"
+
+#~ msgid "Update Language"
+#~ msgstr "Mis à jour d’un language"
+
+#~ msgid "View Language"
+#~ msgstr "Voir le language"
+
+#~ msgid "Separate Languages with commas"
+#~ msgstr "Séparer les languages avec des virgules"
+
+#~ msgid "Add or remove Languages"
+#~ msgstr "Ajouter ou effacer des langues"
+
+#~ msgid "Popular Languages"
+#~ msgstr "Langues populaires"
+
+#~ msgid "Search Languages"
+#~ msgstr "Rechercher dans les langues"
+
+#~ msgid "All Years"
+#~ msgstr "Toutes les années"
+
+#~ msgid "Parent Year"
+#~ msgstr "Année parente"
+
+#~ msgid "Parent Year:"
+#~ msgstr "Année parente"
+
+#~ msgid "New Year Name"
+#~ msgstr "Nouveau nom d’année"
+
+#~ msgid "Add New Year"
+#~ msgstr "Ajouter une nouvelle année"
+
+#~ msgid "Edit Year"
+#~ msgstr "Editer une année"
+
+#~ msgid "Update Year"
+#~ msgstr "Mis à jour de l’année"
+
+#~ msgid "View Year"
+#~ msgstr "Voir l’année"
+
+#~ msgid "Separate years with commas"
+#~ msgstr "Séparer les années avec des virgules"
+
+#~ msgid "Add or remove years"
+#~ msgstr "Ajouter ou effacer des années"
+
+#~ msgid "Popular years"
+#~ msgstr "Années populaires"
+
+#~ msgid "Search years"
+#~ msgstr "Rechercher dans les années"
+
+#~ msgid "Date(s)"
+#~ msgstr "Date·s"
+
+#~ msgid "Heure(s)"
+#~ msgstr "Heure·s"
+
+#~ msgid "Schedule"
+#~ msgstr "Planning"
+
+#~ msgid "Movie trailer"
+#~ msgstr "Bande annonce"
+
+#~ msgid "Add the youtube/vimeo ID"
+#~ msgstr "Ajouter une vidéo grâce au ID (YouTube ou Viméo uniquement)"
+
+#~ msgid "Actor(s)"
+#~ msgstr "Acteur·rice·s"
+
+#~ msgid "Slider texte"
+#~ msgstr "Texte du slider"
+
+#~ msgid "Use this field only if you want to display this message on the slider in the landing page"
+#~ msgstr "Utilisez ce champs uniquement si vous voulez afficher un message dans le slider de la page d'accueil"
+
+#~ msgid "&larr; Older comments"
+#~ msgstr "&larr; Commentaires anciens"
+
+#~ msgid "Newer comments &rarr;"
+#~ msgstr "Commentaires récents &rarr;"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Commentaires fermés."
+
+#~ msgid "Pages:"
+#~ msgstr "Pages:"
+
+#~ msgid "By"
+#~ msgstr "Par"
+
+#~ msgid "Next 30 days"
+#~ msgstr "Prochainement"
+
+#~ msgid "Search"
+#~ msgstr "Recherche"
+
+#~ msgid "Parent Event:"
+#~ msgstr "Parent de l’évènement :"
+
+#~ msgid "All Events"
+#~ msgstr "Tous les évènements"
+
+#~ msgid "Add New Event"
+#~ msgstr "Ajouter un nouvel évènement"
+
+#~ msgid "New Event"
+#~ msgstr "Nouvel évènement"
+
+#~ msgid "Edit Event"
+#~ msgstr "Editer un évènement"
+
+#~ msgid "Update Event"
+#~ msgstr "Mettre à jour l’évènement"
+
+#~ msgid "View Event"
+#~ msgstr "Voir l’évènement"
+
+#~ msgid "Search Event"
+#~ msgstr "Rechercher un évènement"
+
+#~ msgid "Event"
+#~ msgstr "Evènement"
+
+#~ msgid "This week"
+#~ msgstr "Cette semaine"
+
+#~ msgid "This month"
+#~ msgstr "Ce mois"
+
+#~ msgid "Search for:"
+#~ msgstr "Rechercher:"
+
+#~ msgctxt "comments title"
+#~ msgid "One response to &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Une réponse à &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s réponses à &ldquo;%2$s&rdquo;"
+
+#~ msgid "Sage Starter Theme"
+#~ msgstr "Sage Thème Starter"
+
+#~ msgid "https://roots.io/sage/"
+#~ msgstr "https://roots.io/sage/"
+
+#~ msgid "Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage\">Contribute on GitHub</a>"
+#~ msgstr "Sage est un thème de démarrage WordPress (Starter Theme). <a href=\"https://github.com/roots/sage\">Contribuer sur GitHub</a>"
+
+#~ msgid "Roots"
+#~ msgstr "Roots"
+
+#~ msgid "https://roots.io/"
+#~ msgstr "https://roots.io/"
+
+#~ msgid "Custom Template"
+#~ msgstr "Custom Template "

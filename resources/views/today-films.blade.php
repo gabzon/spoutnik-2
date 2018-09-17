@@ -90,7 +90,7 @@
     <div class="ui grid">
         <div class="one wide column"></div>
         <div class="ten wide column">
-            <h1><?php _e('Nothing at Spoutnik for today!','sage'); ?></h1>
+            <h1><?php _e('Rien pour aujourd’hui au Spoutnik !','sage'); ?></h1>
         </div>
     </div>
 @endif
