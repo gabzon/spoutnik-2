@@ -96,7 +96,19 @@ $hour = [];
             <?php $movie_date = new DateTime($film['date']);  ?>
             <h3 class="film-week-detail">
               <?php echo utf8_encode(strftime("%a %e %b", $movie_date->getTimestamp())) . ', ' . $film['hour'] ; ?>
+              @php( $alerts = Film::notification_dates($film['id']) )
+              @if ( in_array($film['date'], $alerts) )
+                <br>
+                @php
+                  $notification_message = Film::get_notification_message($film['id'], $film['date']);
+                @endphp
+                <span style="color:grey;text-transform:'lowercase'">{{ $notification_message }}</span>
+              @endif
             </h3>
+
+
+
+
             <?php $director = get_the_terms($film['id'],'director'); ?>
             <?php $country = get_the_terms($film['id'],'country'); ?>
             <?php $language = get_the_terms($film['id'],'language'); ?>
@@ -104,48 +116,48 @@ $hour = [];
             <?php $format = get_the_terms($film['id'],'format'); ?>
             {{-- <h5>
 
-              @if ($director)
-                @foreach ($director as $x)
-                  {{ $x->name . ' ' }}
-                @endforeach
-                <br>
-              @endif
+            @if ($director)
+            @foreach ($director as $x)
+            {{ $x->name . ' ' }}
+          @endforeach
+          <br>
+        @endif
 
-              @if ($country)
-                @foreach ($country as $x)
-                  {{ $x->name . ' ' }}
-                @endforeach
-                <br>
-              @endif
+        @if ($country)
+        @foreach ($country as $x)
+        {{ $x->name . ' ' }}
+      @endforeach
+      <br>
+    @endif
 
-              @if ($year)
-                @foreach ($year as $x)
-                  {{ $x->name . ' ' }}
-                @endforeach
-                <br>
-              @endif
+    @if ($year)
+    @foreach ($year as $x)
+    {{ $x->name . ' ' }}
+  @endforeach
+  <br>
+@endif
 
-              @if ($language)
-                @foreach ($language as $x)
-                  {{ $x->name . ' ' }}
-                @endforeach
-                <br>
-              @endif
+@if ($language)
+@foreach ($language as $x)
+{{ $x->name . ' ' }}
+@endforeach
+<br>
+@endif
 
-              @if ($format)
-                @foreach ($format as $x)
-                  {{ $x->name . ' ' }}
-                @endforeach
-              @endif
-              <br>
-              @if (get_post_meta($post->ID,'film_duration',true) )
-                {{ ' ' . get_post_meta($post->ID,'film_duration',true) }}
-              @endif
-            </h5> --}}
-          </div>
-        @endforeach
-      @endif
-    </div>
-    <br>&nbsp;
-  </div>
+@if ($format)
+@foreach ($format as $x)
+{{ $x->name . ' ' }}
+@endforeach
+@endif
+<br>
+@if (get_post_meta($post->ID,'film_duration',true) )
+{{ ' ' . get_post_meta($post->ID,'film_duration',true) }}
+@endif
+</h5> --}}
+</div>
+@endforeach
+@endif
+</div>
+<br>&nbsp;
+</div>
 </section>
