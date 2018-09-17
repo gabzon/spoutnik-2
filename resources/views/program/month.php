@@ -16,7 +16,7 @@ $current_month = date('m');
     <div class="ui grid">
       <div class="sixteen wide column">
         <!-- <h1><?php //_e('This month','sage'); ?></h1> -->
-        <h1><?php _e('Ce mois','sage'); ?> </h1>
+        <h1><?php _e('This month','sage'); ?> </h1>
       </div>
     </div>
     <div class="ui four column grid stackable">

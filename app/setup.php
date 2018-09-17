@@ -126,3 +126,11 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+
+
+// Load sage text domain for translations in "resources/lang"
+// https://discourse.roots.io/t/install-sage9-language-files/10638/8
+add_action( 'after_setup_theme', function () {
+  load_theme_textdomain( 'sage', get_template_directory() . '/lang' );
+} );

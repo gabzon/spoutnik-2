@@ -18,7 +18,7 @@ $full_program = $theme_options['spoutnik_programme_complet'];
         <div class="seven wide column">
           <br> @php( setlocale(LC_TIME, "fr_FR") )
           <h1 style="text-transform:uppercase">
-            {{ __('Aujourd\'hui ','sage') }} <br>
+            {{ __('Aujourd\'hui','sage') }} <br>
             {{ utf8_encode(strftime("%A %e %B")) }}
           </h1>
           <br>

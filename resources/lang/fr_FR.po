@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Spoutnik\n"
-"POT-Creation-Date: 2018-09-17 16:00+0100\n"
+"POT-Creation-Date: 2018-09-17 16:19+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../piklist/parts/terms/director.php:13
 msgid "Biography"
-msgstr ""
+msgstr "Biographie"
 
 #: ../piklist/parts/terms/director.php:20
 #: ../piklist/parts/terms/program.php:20
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../piklist/parts/terms/program.php:13
 msgid "Text"
-msgstr ""
+msgstr "Texte"
 
 #: ../piklist/parts/terms/program.php:27
 msgid "Add Program link URL"
@@ -257,11 +257,11 @@ msgid "Today"
 msgstr "Aujourd’hui"
 
 #: ../views/program/month.php:19
-msgid "Ce mois"
-msgstr ""
+msgid "This month"
+msgstr "Ce mois"
 
 #: ../views/program/week.blade.php:81
-msgid "Next 20 days"
+msgid "Soon"
 msgstr "Prochainement"
 
 #: ../views/taxonomy-program.blade.php:31
@@ -297,8 +297,20 @@ msgid "Duration: "
 msgstr "Durée :"
 
 #: ../views/today-films.blade.php:93
-msgid "Nothing at Spoutnik for today!"
-msgstr "Rien pour aujourd’hui au Spoutnik !"
+msgid "Nothing for today at Spoutnik !"
+msgstr "Rien pour aujourd’hui au Spoutnik"
+
+#~ msgid "Prochainement"
+#~ msgstr "asldkfj"
+
+#~ msgid "Aujourd'hui"
+#~ msgstr "Today"
+
+#~ msgid "Next 20 days"
+#~ msgstr "Prochainement"
+
+#~ msgid "Nothing at Spoutnik for today!"
+#~ msgstr "Rien pour aujourd’hui au Spoutnik !"
 
 #~ msgid "Sorry, but the page you were trying to view does not exist."
 #~ msgstr "Désolé, nous n’avons trouvé ce que vous cherchez :-("
@@ -740,9 +752,6 @@ msgstr "Rien pour aujourd’hui au Spoutnik !"
 
 #~ msgid "This week"
 #~ msgstr "Cette semaine"
-
-#~ msgid "This month"
-#~ msgstr "Ce mois"
 
 #~ msgid "Search for:"
 #~ msgstr "Rechercher:"
