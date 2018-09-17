@@ -1,3 +1,7 @@
+<style media="screen">
+  #distribution a{ color: black;}
+</style>
+
 <article @php(post_class())>
   <div class="ui container" id="the-movie">
     <br>
@@ -104,17 +108,19 @@
               </tr>
             <?php endif; ?>
 
+            @if ( the_terms( $post->ID, 'distribution') )
+              <tr id="distribution">
+                <td valign="top" width="40%"><h5><?php _e('Distribution','sage'); ?></h5></td>
+                <td>
+                  <h5 style="color:black;"><?php the_terms( $post->ID, 'distribution', '', '<br>' ); ?></h5>
+                </td>
+              </tr>
+            @endif
+
             <tr>
               <td valign="top" width="40%"><h5><?php _e('Cycle','sage'); ?></h5></td>
               <td>
                 <h5 style="color:black;"><?php the_terms( $post->ID, 'cycle', '', '<br>' ); ?></h5>
-              </td>
-            </tr>
-
-            <tr>
-              <td valign="top" width="40%"><h5><?php _e('Distribution','sage'); ?></h5></td>
-              <td>
-                <h5 style="color:black;"><?php the_terms( $post->ID, 'distribution', '', '<br>' ); ?></h5>
               </td>
             </tr>
 
