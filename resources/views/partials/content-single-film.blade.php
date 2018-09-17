@@ -108,7 +108,7 @@
               </tr>
             <?php endif; ?>
 
-            @if ( the_terms( $post->ID, 'distribution') )
+            @if ( has_term( '', 'distribution') )
               <tr id="distribution">
                 <td valign="top" width="40%"><h5><?php _e('Distribution','sage'); ?></h5></td>
                 <td>
