@@ -27,15 +27,15 @@ class Film extends Controller
 
   public static function disable_film($d1,$d2, $id)
   {
-      if ($d1 < $d2)
-      {
-        global $wpdb;
-        $wpdb->update( $wpdb->posts, array( 'post_status' => 'inactive' ), array( 'ID' => $id ) );
-        clean_post_cache( get_the_ID() );
-        $old_status = $post->post_status;
-        $post->post_status = 'inactive';
-        wp_transition_post_status( 'inactive', $old_status, $post );
-      }
+    if ($d1 < $d2)
+    {
+      global $wpdb;
+      $wpdb->update( $wpdb->posts, array( 'post_status' => 'inactive' ), array( 'ID' => $id ) );
+      clean_post_cache( get_the_ID() );
+      $old_status = $post->post_status;
+      $post->post_status = 'inactive';
+      wp_transition_post_status( 'inactive', $old_status, $post );
+    }
 
   }
 
@@ -43,8 +43,11 @@ class Film extends Controller
   {
     $notifications = get_post_meta($id,'film_notifications');
     $dates = [];
+
     for ($i = 0; $i < count($notifications[0]); $i++) {
-      $dates[] = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
+      if ($notifications[0][$i]['film_notification_date']) {
+         $dates[] = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
+      }
     }
 
     return $dates;
@@ -57,7 +60,7 @@ class Film extends Controller
     for ($i = 0; $i < count($notifications[0]); $i++) {
       $film_date = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
       if($film_date == $date) {
-          return $notifications[0][$i]['film_notification_desc'];
+        return $notifications[0][$i]['film_notification_desc'];
       }
     }
   }
