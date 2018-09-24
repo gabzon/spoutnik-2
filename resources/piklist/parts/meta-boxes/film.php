@@ -99,5 +99,5 @@ piklist('field', array(
   'label'     => 'Notifications',
   'columns'   => 12,
   'add_more'  => true,
-  'fields'    => [$film_notification_date, $film_notification_desc],
+  'fields'    => [ $film_notification_date, $film_notification_desc ],
 ));

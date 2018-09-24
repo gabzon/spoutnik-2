@@ -19,7 +19,7 @@ $colorpicker = $theme_options['colorpicker'];
           <br>
           <br>
           <br>
-          @include('program.month')
+          {{-- @include('program.month') --}}
           @include('program.week')
           <br>
           <br>
