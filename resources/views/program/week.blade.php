@@ -94,17 +94,17 @@ $hour = [];
             </div>
             <?php setlocale(LC_TIME, "fr_FR"); ?>
             <?php $movie_date = new DateTime($film['date']);  ?>
-            <h3 class="film-week-detail">
+            <h3 class="film-week-detail" style="margin-bottom:0; padding-bottom:0;">
               <?php echo utf8_encode(strftime("%a %e %b", $movie_date->getTimestamp())) . ', ' . $film['hour'] ; ?>
-              @php( $alerts = Film::notification_dates($film['id']) )
-              @if ( in_array($film['date'], $alerts) )
-                <br>
-                @php
-                  $notification_message = Film::get_notification_message($film['id'], $film['date']);
-                @endphp
-                <span style="color:grey;text-transform:'lowercase'">{{ $notification_message }}</span>
-              @endif
             </h3>
+            @php( $alerts = Film::notification_dates($film['id']) )
+            @if ( in_array($film['date'], $alerts) )
+              @php
+              $notification_message = Film::get_notification_message($film['id'], $film['date']);
+              $text_color = App::text_color();
+              @endphp
+              <h3 style="color:{{$text_color}}; margin:0; padding:0; margin-left:10px;">{{ $notification_message }}</h3>
+            @endif
 
 
 

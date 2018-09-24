@@ -35,8 +35,20 @@ piklist('field', array(
 piklist('field', array(
     'type' => 'colorpicker'
     ,'field' => 'colorpicker'
-    ,'label' => 'Choose a color'
+    ,'label' => 'Background color'
     ,'value' => '#aee029'
+    ,'description' => 'Click in the box to select a color.'
+    ,'help' => 'This is help text.'
+    ,'attributes' => array(
+        'class' => 'text'
+    )
+));
+
+piklist('field', array(
+    'type'    => 'colorpicker'
+    ,'field'  => 'text_color'
+    ,'label'  => 'Text color'
+    ,'value'  => '#aee029'
     ,'description' => 'Click in the box to select a color.'
     ,'help' => 'This is help text.'
     ,'attributes' => array(
