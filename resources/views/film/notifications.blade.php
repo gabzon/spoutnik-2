@@ -1,8 +1,8 @@
+@if ( get_post_meta($post->ID, 'film_landing', true) )
+  <h4>{{ get_post_meta($post->ID, 'film_landing', true) }}</h4>
+@endif
 @if ($notification_dates)
   @php($alerts = get_post_meta($post->ID,'film_notifications'))
-  @if ( get_post_meta($post->ID, 'film_landing', true) )
-    <h4>{{ get_post_meta($post->ID, 'film_landing', true) }}</h4>
-  @endif
   @if (count($alerts[0]) > 0)
     <div class="notifications">
       @for ($i=0; $i < count($alerts[0]); $i++)
