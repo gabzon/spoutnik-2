@@ -1,5 +1,9 @@
 @if ( get_post_meta($post->ID, 'film_landing', true) )
-  <h4>{{ get_post_meta($post->ID, 'film_landing', true) }}</h4>
+  <h4>
+    @php
+      echo get_post_meta($post->ID, 'film_landing', true);
+    @endphp
+  </h4>
 @endif
 @if ($notification_dates)
   @php($alerts = get_post_meta($post->ID,'film_notifications'))
