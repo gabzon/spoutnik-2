@@ -13,5 +13,6 @@
         {{ utf8_encode(strftime("%a %e %b %G", $alert_date->getTimestamp())) }}, {{ $alerts[0][$i]['film_notification_desc']}}
       </h4>
     @endfor
+    <br>
   </div>
 @endif
