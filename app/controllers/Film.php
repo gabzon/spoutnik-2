@@ -58,7 +58,9 @@ class Film extends Controller
     $notifications = get_post_meta($id,'film_notifications');
 
     for ($i = 0; $i < count($notifications[0]); $i++) {
-      $film_date = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
+      if ($notifications[0][$i]['film_notification_date']) {
+          $film_date = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
+      }
       if($film_date == $date) {
         return $notifications[0][$i]['film_notification_desc'];
       }
