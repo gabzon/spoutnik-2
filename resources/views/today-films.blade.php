@@ -11,7 +11,11 @@
             <a href="<?php echo esc_url($movie['link']); ?>" style="color:black">
               <h1><?php echo $movie['title']; ?></h1>
             </a>
-            <h3 style="margin:0">{{ get_post_meta($movie['id'],'film_landing',true) }}</h3>
+            <h3 style="margin:0">
+              @php
+                echo get_post_meta($movie['id'],'film_landing',true)
+              @endphp
+            </h3>
             @php
             $notification_message = Film::get_notification_message($movie['id'], $movie['date']);
             $text_color = App::text_color();
