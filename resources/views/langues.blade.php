@@ -31,13 +31,12 @@ Template Name: Langues
       $args = array(
         'post_type'      => 'film',
         'posts_per_page'  => -1,
-        'posts_per_page' => 'publish',
+        'post_status'   => 'publish',
         'tax_query'      => array(
           array(
             'taxonomy' => 'language',
             'field'    => 'slug',
             'terms'    => array('vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'),
-            // 'terms'    => ['vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'],
           ),
         ),
       );
