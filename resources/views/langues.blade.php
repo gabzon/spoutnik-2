@@ -31,7 +31,7 @@ Template Name: Langues
       $args = array(
         'post_type'      => 'film',
         'posts_per_page'  => -1,
-        // 'posts_per_page' => 'publish',
+        'posts_per_page' => 'publish',
         'tax_query'      => array(
           array(
             'taxonomy' => 'language',
@@ -50,7 +50,7 @@ Template Name: Langues
         <div class="ui four column grid stackable">
           @if ( $the_query->have_posts() )
             @while ($the_query->have_posts()) @php($the_query->the_post())
-              <div class="column">                
+              <div class="column">
                 <article @php(post_class())>
                   <header>
                     @php( $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full') )
