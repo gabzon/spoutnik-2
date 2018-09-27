@@ -1,5 +1,5 @@
 {{--
-Template Name: Films Categories
+Template Name: Archives
 --}}
 
 @php
