@@ -31,7 +31,7 @@ Template Name: Langues
         'post_status'    => 'publish',
         'tax_query'      => array(
           array(
-            'taxonomy' => 'langue',
+            'taxonomy' => 'language',
             'field'    => 'slug',
             'terms'    => ['vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'],
           ),
