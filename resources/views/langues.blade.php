@@ -32,6 +32,7 @@ Template Name: Langues
       $args = array(
         'post_type'      => 'film',
         'posts_per_page'  => -1,
+        'posts_per_page' => 'publish',
         'tax_query'      => array(
           array(
             'taxonomy' => 'language',
