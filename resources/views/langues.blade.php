@@ -43,7 +43,7 @@ Template Name: Langues
       // The Query
       $the_query = new WP_Query( $args );
       @endphp
-      <h1>Upcoming english speaking friendly films/events at Cinema Spoutnik</h1>
+      <h1>Upcoming English speaking friendly films/events at Cinema Spoutnik</h1>
       <br>
       <div class="ui container">
         <div class="ui four column grid stackable">
@@ -57,10 +57,10 @@ Template Name: Langues
                       <img src="{{ $thumb['0'] }}" alt="" class="ui image"/>
                     </a>
                     <h2 class="entry-title"><a href="@php(the_permalink())" class="title-link">@php( the_title() )</a></h2>
-                    @if ( get_post_meta($post->ID,'film_landing',true) )
+                    @if ( get_post_meta(get_the_ID(),'film_landing',true) )
                       <h4>
                         @php
-                          echo get_post_meta($post->ID,'film_landing',true);
+                          echo get_post_meta(get_the_ID(),'film_landing',true);
                         @endphp
                       </h4>
                     @endif
