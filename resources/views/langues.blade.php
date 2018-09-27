@@ -25,30 +25,35 @@ Template Name: Langues
         </div>
         <div class="one wide column"></div>
       </div>
+
+
+
       @php
       $args = array(
-        'post_type'      => 'film',        
-        // 'post_status'    => 'publish',
-        // 'tax_query'      => array(
-        //   array(
-        //     'taxonomy' => 'language',
-        //     'field'    => 'slug',
-        //     'terms'    => ['vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'],
-        //   ),
-        // ),
+        'post_type'      => 'film',
+        'posts_per_page'  => -1,
+        'tax_query'      => array(
+          array(
+            'taxonomy' => 'language',
+            'field'    => 'slug',
+            'terms'    => array('vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'),
+            // 'terms'    => ['vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'],
+          ),
+        ),
       );
+
 
       // The Query
       $the_query = new WP_Query( $args );
-
-      // The Loop
+      //Piklist::pre($the_query);
+      //The Loop
       if ( $the_query->have_posts() ) {
-        echo '<ul>';
+        echo '<ol>';
         while ( $the_query->have_posts() ) {
           $the_query->the_post();
           echo '<li>' . get_the_title() . '</li>';
         }
-        echo '</ul>';
+        echo '</ol>';
         /* Restore original Post Data */
         wp_reset_postdata();
       } else {
