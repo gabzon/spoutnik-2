@@ -76,7 +76,7 @@ Template Name: Langues
               wp_reset_postdata();
             @endphp
           @else
-            Nous n'avons pas de films
+            Sorry nothing at the moment...
           @endif
 
         </div>
