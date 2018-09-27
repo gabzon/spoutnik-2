@@ -27,15 +27,15 @@ Template Name: Langues
       </div>
       @php
       $args = array(
-        'post_type'      => 'film',
-        'post_status'    => 'publish',
-        'tax_query'      => array(
-          array(
-            'taxonomy' => 'language',
-            'field'    => 'slug',
-            'terms'    => ['vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'],
-          ),
-        ),
+        'post_type'      => 'film',        
+        // 'post_status'    => 'publish',
+        // 'tax_query'      => array(
+        //   array(
+        //     'taxonomy' => 'language',
+        //     'field'    => 'slug',
+        //     'terms'    => ['vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'],
+        //   ),
+        // ),
       );
 
       // The Query
