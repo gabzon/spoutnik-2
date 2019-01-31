@@ -14,11 +14,4 @@ Capability: manage_options
      'columns'  => 12
  ]);
 
- piklist('field', [
-     'type'     => 'text',
-     'field'    => 'img_cycle',
-     'label'    => __('Add image link URL'),
-     'help'     => __('Image should have a width bigger than 980px'),
-     'columns'  => 12
- ]);
  ?>
