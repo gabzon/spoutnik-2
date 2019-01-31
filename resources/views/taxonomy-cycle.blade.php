@@ -20,11 +20,9 @@
       <div class="one wide column"></div>
       <div class="seven wide column">
         <img src="{{ $image_cycle[0] }}" alt="" class="ui image" />
-                @php
-        echo get_queried_object()->term_id;
-        //echo $term_id;
-        var_dump($image_cycle);
-        @endphp
+                <pre>
+          <?php var_dump($image_cycle); ?>
+        </pre>
       </div>
       <div class="seven wide column">
         @php
