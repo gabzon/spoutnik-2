@@ -14,12 +14,12 @@
   @endif
 
   <div class="ui container">
-    <?php $image_cycle = get_term_meta(get_queried_object()->term_id, 'image_cycle', false); ?>
+    <?php $image_cycle = get_term_meta(get_queried_object()->term_id, 'image_cycle', true); ?>
     <h1>{{ get_queried_object()->name }}</h1>
     <div class="ui grid stackable">
       <div class="one wide column"></div>
       <div class="seven wide column">
-        <img src="{{ $image_cycle[0] }}" alt="" class="ui image" />
+        <img src="{{ $image_cycle }}" alt="" class="ui image" />
                 <pre>
           <?php var_dump($image_cycle); ?>
         </pre>
