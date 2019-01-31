@@ -20,9 +20,6 @@
       <div class="one wide column"></div>
       <div class="seven wide column">
         <img src="{{ $image_cycle }}" alt="" class="ui image" />
-                <pre>
-          <?php var_dump($image_cycle); ?>
-        </pre>
       </div>
       <div class="seven wide column">
         @php
