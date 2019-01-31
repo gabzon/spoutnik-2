@@ -23,7 +23,7 @@
                 @php
         echo get_queried_object()->term_id;
         //echo $term_id;
-        //echo $image_cycle;
+        echo 'image: ' + $image_cycle;
         @endphp
       </div>
       <div class="seven wide column">
