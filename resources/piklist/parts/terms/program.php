@@ -5,8 +5,6 @@ Taxonomy: program
 Capability: manage_options
 */
 
-
-
  piklist('field', [
      'type'     => 'textarea',
      'field'    => 'program_text',

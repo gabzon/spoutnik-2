@@ -14,7 +14,7 @@
   @endif
 
   <div class="ui container">
-    @php($image_cycle = get_term_meta(get_queried_object()->term_id, 'image_cycle', true))
+    <?php $image_cycle = get_term_meta(get_queried_object()->term_id, 'image_cycle', true); ?>
     <h1>{{ get_queried_object()->name }}</h1>
     <div class="ui grid stackable">
       <div class="one wide column"></div>
