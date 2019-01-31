@@ -22,8 +22,8 @@
         <img src="{{ $image_cycle }}" alt="" class="ui image" />
                 @php
         echo get_queried_object()->term_id;
-        echo $term_id;
-        echo $image_cycle;
+        //echo $term_id;
+        //echo $image_cycle;
         @endphp
       </div>
       <div class="seven wide column">
