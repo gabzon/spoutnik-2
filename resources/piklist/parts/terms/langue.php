@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Extra options
-Taxonomy: cycle
+Taxonomy: langue
 Capability: manage_options
 */
 
