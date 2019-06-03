@@ -15,7 +15,7 @@
       &nbsp;
       {{ $key['film_heure'] }}
       @php
-        echo ' ' . $alert;
+      echo ' ' . $alert;
       @endphp
     </h5>
   @endforeach
