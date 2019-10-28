@@ -186,12 +186,13 @@ $horaire = $theme_options['spoutnik_horaire'];
           </h5>
 
           <h5 class="sidebar-h5">
-            <?php _e('ORGANISERS: ','sage'); ?><br><br>
+            <?php _e('PERMANENCE ','sage'); ?><br><br>
             <?php echo $organisers; ?>
           </h5>
 
           <h5 class="sidebar-h5">
-            <?php _e('THE COMMITTEE:','sage'); ?><br><br>
+            <?php _e('THE COMMITTEE:','sage'); ?>
+            <br><br>
             <?php echo $committee; ?>
           </h5>
         </p>
