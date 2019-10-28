@@ -194,7 +194,6 @@ $horaire = $theme_options['spoutnik_horaire'];
             <?= 'LE COMITÉ' ?>
             <br>
             <br>
-            <br>
             <?php echo $committee; ?>
           </h5>
         </p>
