@@ -32,7 +32,9 @@ class Film extends Controller
     {
       //global $wpdb;
       //$wpdb->update( $wpdb->posts, array( 'post_status' => 'inactive' ), array( 'ID' => $id ) );
-      wp_set_post_categories($id, 499);
+      // localhost archive id=499
+      // spoutnik.info archive id=2402
+      wp_set_post_categories($id, 2402);
       clean_post_cache( get_the_ID() );
       //$old_status = $post->post_status;
       //$post->post_status = 'inactive';
