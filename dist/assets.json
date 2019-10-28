@@ -1,14 +1,4 @@
 {
-  "fonts/SuisseIntl-Medium-WebXL.eot": "fonts/SuisseIntl-Medium-WebXL_b66651db.eot",
-  "fonts/SuisseIntl-Medium-WebXL.svg": "fonts/SuisseIntl-Medium-WebXL_71c5abfa.svg",
-  "fonts/SuisseIntl-Medium-WebXL.ttf": "fonts/SuisseIntl-Medium-WebXL_e4a6323a.ttf",
-  "fonts/SuisseIntl-Medium-WebXL.woff": "fonts/SuisseIntl-Medium-WebXL_852faa88.woff",
-  "fonts/SuisseIntl-Medium-WebXL.woff2": "fonts/SuisseIntl-Medium-WebXL_d63a12b9.woff2",
-  "fonts/SuisseNeue-Regular-WebXL.eot": "fonts/SuisseNeue-Regular-WebXL_70081764.eot",
-  "fonts/SuisseNeue-Regular-WebXL.svg": "fonts/SuisseNeue-Regular-WebXL_506fef18.svg",
-  "fonts/SuisseNeue-Regular-WebXL.ttf": "fonts/SuisseNeue-Regular-WebXL_219f6005.ttf",
-  "fonts/SuisseNeue-Regular-WebXL.woff": "fonts/SuisseNeue-Regular-WebXL_c9916301.woff",
-  "fonts/SuisseNeue-Regular-WebXL.woff2": "fonts/SuisseNeue-Regular-WebXL_068e2b48.woff2",
   "fonts/SuisseWorks-Medium-WebXL.eot": "fonts/SuisseWorks-Medium-WebXL_b4297c8c.eot",
   "fonts/SuisseWorks-Medium-WebXL.svg": "fonts/SuisseWorks-Medium-WebXL_238e0abc.svg",
   "fonts/SuisseWorks-Medium-WebXL.ttf": "fonts/SuisseWorks-Medium-WebXL_8753cd86.ttf",
@@ -36,7 +26,7 @@
   "images/picto_journal_spoutnik-01.svg": "images/picto_journal_spoutnik-01_bf13c19f.svg",
   "images/programme_complet.svg": "images/programme_complet_1bd7800c.svg",
   "styles/ajax-loader.gif": "styles/ajax-loader_c5cd7f53.gif",
-  "scripts/customizer.js": "scripts/customizer_b0f72f33.js",
-  "styles/main.css": "styles/main_b0f72f33.css",
-  "scripts/main.js": "scripts/main_b0f72f33.js"
+  "scripts/customizer.js": "scripts/customizer_a727cc25.js",
+  "styles/main.css": "styles/main_a727cc25.css",
+  "scripts/main.js": "scripts/main_a727cc25.js"
 }
