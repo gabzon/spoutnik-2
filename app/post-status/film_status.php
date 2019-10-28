@@ -17,4 +17,5 @@ if ( ! function_exists('inactive') ) {
     }
     add_action( 'init', 'inactive', 0 );
 }
+
 ?>

@@ -12,7 +12,8 @@ class Film extends Controller
     $args = array (
       'post_type'=> array( 'film' ),
       'posts_per_page' => -1,
-      'post_status' => 'publish'
+      //'post_status' => 'publish'
+      'category_name' => 'archive'
     );
 
     // The Query
@@ -29,12 +30,13 @@ class Film extends Controller
   {
     if ($d1 < $d2)
     {
-      global $wpdb;
-      $wpdb->update( $wpdb->posts, array( 'post_status' => 'inactive' ), array( 'ID' => $id ) );
+      //global $wpdb;
+      //$wpdb->update( $wpdb->posts, array( 'post_status' => 'inactive' ), array( 'ID' => $id ) );
+      wp_set_post_categories($id, 499);
       clean_post_cache( get_the_ID() );
-      $old_status = $post->post_status;
-      $post->post_status = 'inactive';
-      wp_transition_post_status( 'inactive', $old_status, $post );
+      //$old_status = $post->post_status;
+      //$post->post_status = 'inactive';
+      //wp_transition_post_status( 'inactive', $old_status, $post );
     }
 
   }

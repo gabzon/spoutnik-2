@@ -70,7 +70,7 @@ array_map(function ($file) use ($sage_error) {
   'taxonomy/language',
   'taxonomy/program',
   'taxonomy/year',
-  'post-status/film_status',
+  //'post-status/film_status',
   'post-type/film',
 ]);
 
