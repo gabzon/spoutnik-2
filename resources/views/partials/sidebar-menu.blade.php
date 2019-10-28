@@ -96,8 +96,9 @@ $horaire = $theme_options['spoutnik_horaire'];
                         <?php echo $organisers; ?>
                     </h5>
 
-                    <h5><?php _e('THE COMMITTEE:','sage'); ?></h5>
+                    <h5 class="sidebar-h5"><?php _e('THE COMMITTEE:','sage'); ?>
                     <?php echo $committee; ?>
+                    </h5>
                 </p>
             </div>
             <div class="title">
