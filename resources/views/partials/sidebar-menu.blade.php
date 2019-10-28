@@ -83,7 +83,7 @@ $horaire = $theme_options['spoutnik_horaire'];
             <i class="mail icon"></i> <?php echo $email; ?><br>
             <i class="phone icon"></i> <?php echo $phone; ?><br>
             <br>
-            <?php _e('Opening hours','sage'); ?><br>
+            <?php //_e('Opening hours','sage'); ?><br>
             <?php if ($horaire): ?>
               <?php echo $horaire ?>
             <?php else: ?>
@@ -92,7 +92,9 @@ $horaire = $theme_options['spoutnik_horaire'];
           </h5>
 
           <h5 class="sidebar-h5">
-            <?php _e('ORGANISERS: ','sage'); ?><br><br>
+            <?php //_e('ORGANISERS: ','sage'); ?>
+            <?php echo 'PERMANENCE'; ?>
+            <br><br>
             <?php echo $organisers; ?>
           </h5>
 
