@@ -12,8 +12,9 @@ class Film extends Controller
     $args = array (
       'post_type'=> array( 'film' ),
       'posts_per_page' => -1,
+      'category__not_in' => array( 2402 )
       //'post_status' => 'publish'
-      'category_name' => 'archive'
+      //'category_name' => 'archive'
     );
 
     // The Query
@@ -35,6 +36,7 @@ class Film extends Controller
       // localhost archive id=499
       // spoutnik.info archive id=2402
       wp_set_post_categories($id, 2402);
+      wp_remove_object_terms($id,['focus','landing-page'], 'category');
       clean_post_cache( get_the_ID() );
       //$old_status = $post->post_status;
       //$post->post_status = 'inactive';
