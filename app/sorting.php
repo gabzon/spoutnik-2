@@ -3,7 +3,7 @@
 function todays_movies(){
     $todays_movies = array();
 
-    $args = array ('post_type'=> array( 'film' ),'posts_per_page' => -1);
+    $args = array ('post_type'=> array( 'film' ),'posts_per_page' => 50);
     $query = new WP_Query( $args );
 
     if ( $query->have_posts() ):
