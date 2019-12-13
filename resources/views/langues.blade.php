@@ -31,6 +31,7 @@ Template Name: Langues
       $args = array(
         'post_type'      => 'film',
         'posts_per_page'  => -1,
+        'category__not_in' => array( 2402 ),
         'order'       => 'ASC',
         'post_status'   => 'publish',
         'tax_query'      => array(
