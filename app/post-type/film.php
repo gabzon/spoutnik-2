@@ -36,6 +36,7 @@ if ( ! function_exists('film_post_type') ) {
 			'taxonomies'          => array( 'category', 'post_tag', 'film-year', 'director', 'language', 'country','format','cycle','couleur', 'program', 'distribution'),
 			'hierarchical'        => false,
 			'public'              => true,
+			'show_in_rest' 				=> true,
 			'show_ui'             => true,
 			'show_in_menu'        => true,
 			'menu_position'       => 5,
