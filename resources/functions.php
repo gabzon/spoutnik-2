@@ -61,6 +61,7 @@ array_map(function ($file) use ($sage_error) {
 }, [
   'helpers', 'setup', 'filters', 'admin', 'default', 'sorting', 'spoutnik',
   'status',
+  'api/film-api',
   'taxonomy/couleur',
   'taxonomy/distribution',
   'taxonomy/country',
@@ -104,6 +105,12 @@ Container::getInstance()
     'view' => require dirname(__DIR__).'/config/view.php',
   ]);
 }, true);
+
+add_action( 'rest_api_init', function () {
+  $controller = new Film_Endpoint();
+  $controller->register_routes();
+} );
+
 
 // add_action('wp_head', 'show_template');
 // function show_template() {

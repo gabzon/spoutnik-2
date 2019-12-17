@@ -9,6 +9,12 @@ class Film extends Controller
 {
   public static function get_list_films()
   {
+    $output = get_transient( 'films_list' );
+
+    if ( ( false !== $output ) && ( is_array( $output ) ) ) {
+      return $output;
+    }
+
     $args = array (
       'post_type'=> array( 'film' ),
       'posts_per_page' => -1,
@@ -17,9 +23,14 @@ class Film extends Controller
       //'category_name' => 'archive'
     );
 
-    // The Query
     $query = new WP_Query( $args );
-    return $query;
+
+    if ( is_array( $query ) ) {
+      set_transient( 'films_list', $query, 3 * HOUR_IN_SECONDS );
+      return $query;
+    }
+
+    return array();
   }
 
   public static function last_projection($date)
@@ -52,7 +63,7 @@ class Film extends Controller
 
     for ($i = 0; $i < count($notifications[0]); $i++) {
       if ($notifications[0][$i]['film_notification_date']) {
-         $dates[] = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
+        $dates[] = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
       }
     }
 
@@ -65,7 +76,7 @@ class Film extends Controller
 
     for ($i = 0; $i < count($notifications[0]); $i++) {
       if ($notifications[0][$i]['film_notification_date']) {
-          $film_date = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
+        $film_date = DateTime::createFromFormat('d/m/Y', $notifications[0][$i]['film_notification_date'])->format('Y-m-d');
       }
       if($film_date == $date) {
         return $notifications[0][$i]['film_notification_desc'];
