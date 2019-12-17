@@ -2,7 +2,8 @@
 $args = array (
   'post_type'=> array( 'film' ),
   'posts_per_page' => -1,
-  'post_status' => 'publish'
+  'post_status' => 'publish',
+  'category__not_in' => array( 2402 )
 );
 
 // The Query
@@ -105,9 +106,6 @@ $hour = [];
               @endphp
               <h3 style="color:{{$text_color}}; margin:0; padding:0; margin-left:10px;">{{ $notification_message }}</h3>
             @endif
-
-
-
 
             <?php $director = get_the_terms($film['id'],'director'); ?>
             <?php $country = get_the_terms($film['id'],'country'); ?>
