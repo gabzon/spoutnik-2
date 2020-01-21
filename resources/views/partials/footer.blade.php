@@ -133,7 +133,7 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
                 <h5 class="f6">NORMAL</h5>
               </td>
               <td valign="top" style="padding:5px 0;">
-                <h5 class="f6">Fr. 120.-</h5>
+                <h5 class="f6">Fr. {{ $theme_options['tarif_abo_normal'] }}.-</h5>
               </td>
             </tr>
             <tr style="border-bottom:1px solid #939393;">
@@ -141,7 +141,7 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
                 <h5 class="f6">RÉDUIT</h5>
               </td>
               <td valign="top" style="padding:5px 0;">
-                <h5 class="f6">Fr. 80.-</h5>
+                <h5 class="f6">Fr. {{ $theme_options['tarif_abo_reduit'] }}.-</h5>
               </td>
             </tr>
             <tr style="border-bottom:1px solid #939393;">
@@ -149,7 +149,7 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
                 <h5 class="f6">SOUTIEN</h5>
               </td>
               <td valign="top" style="padding:5px 0;">
-                <h5 class="f6">Fr. 160.-</h5>
+                <h5 class="f6">Fr. {{ $theme_options['tarif_abo_soutien'] }}.-</h5>
               </td>
             </tr>
             <tr style="border-bottom:1px solid #939393;">

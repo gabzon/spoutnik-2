@@ -26,10 +26,29 @@ piklist('field', array(
   'field' => 'tarif_membre',
   'label' => 'Tarif membre'
 ));
+
 piklist('field', array(
   'type' => 'text',
   'field' => 'tarif_membre_annee',
   'label' => 'Tarif membre annee'
+));
+
+piklist('field', array(
+  'type' => 'text',
+  'field' => 'tarif_abo_normal',
+  'label' => 'Abonnement Normal'
+));
+
+piklist('field', array(
+  'type' => 'text',
+  'field' => 'tarif_abo_reduit',
+  'label' => 'Abonnement réduit'
+));
+
+piklist('field', array(
+  'type' => 'text',
+  'field' => 'tarif_abo_soutien',
+  'label' => 'Abonnement soutien'
 ));
 
 piklist('field', array(

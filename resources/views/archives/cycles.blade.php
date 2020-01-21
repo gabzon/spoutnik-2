@@ -31,7 +31,7 @@ $cats = get_terms($cycle, $args);
         <li><a href="{{ esc_url(get_term_link( $child_id, $taxonomy_name )) }}" target="_blank">{{ $term->name }}</a></li>
       @endforeach
     </ul>
-  @endif
+  @endif 
 
   @if ( $cat->slug === 'cycles-focus' )
     @php
