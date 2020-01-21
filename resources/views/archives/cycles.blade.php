@@ -16,13 +16,21 @@ $cats = get_terms($cycle, $args);
     @php
     $term_id = $cat->term_id;
     $taxonomy_name = 'cycle';
-    $termchildren = get_term_children( $term_id, $taxonomy_name );
+    $termchildren = get_term_children( $term_id, $taxonomy_name );    
     @endphp
     <h3>Cycles réguliers</h3>
     @php
-    display_order_alphabeticaly($termchildren, 'cycle');
+    //display_order_alphabeticaly($termchildren, 'cycle');
     @endphp
-
+    
+    <ul class="archives-links">
+      @foreach ($termchildren as $child_id)
+        @php
+          $term = get_term_by( 'id', $child_id, $taxonomy_name );
+        @endphp 
+        <li><a href="{{ esc_url(get_term_link( $child_id, $taxonomy_name )) }}" target="_blank">{{ $term->name }}</a></li>
+      @endforeach
+    </ul>
   @endif
 
   @if ( $cat->slug === 'cycles-focus' )
@@ -30,8 +38,17 @@ $cats = get_terms($cycle, $args);
     $term_id = $cat->term_id;
     $taxonomy_name = 'cycle';
     $termchildren = get_term_children( $term_id, $taxonomy_name );
+    $list_of_childs = array_reverse($termchildren);
     @endphp
     <h3>Cycles ponctuels</h3>
-    @php( display_order_alphabeticaly($termchildren, 'cycle') )
+    {{-- @php( display_order_alphabeticaly($termchildren, 'cycle') ) --}}
+    <ul class="archives-links">
+      @foreach ($list_of_childs as $child_id)
+        @php
+          $term = get_term_by( 'id', $child_id, $taxonomy_name );
+        @endphp 
+        <li><a href="{{ esc_url(get_term_link( $child_id, $taxonomy_name )) }}" target="_blank">{{ $term->name }}</a></li>
+      @endforeach
+    </ul>
   @endif
 @endforeach

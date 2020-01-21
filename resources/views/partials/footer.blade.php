@@ -42,9 +42,16 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
               <td valign="top" width="30%" style="padding:5px 0;"><h5 class="f6">PROGRAMME</h5></td>
               <td valign="top" style="padding:5px 0;">
                 <h5 class="f6">
-                  Alice Riva<br>
-                  Daniel Siemaszko
+                  {{ $theme_options['spoutnik_programmation'] }}
                 </h5>
+              </td>
+            </tr>
+            <tr style="border-bottom:1px solid #939393;">
+              <td valign="top" style="padding:5px 0;">
+                <h5 class="f6">COMPTABILITÉ</h5>
+              </td>
+              <td valign="top" style="padding:5px 0;">
+                <h5 class="f6">{{ $theme_options['spoutnik_comptabilite'] }}</h5>
               </td>
             </tr>
             <tr style="border-bottom:1px solid #939393;">
@@ -52,7 +59,7 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
                 <h5 class="f6">GRAPHISME</h5>
               </td>
               <td valign="top" style="padding:5px 0;">
-                <h5 class="f6">Clovis Duran</h5>
+                <h5 class="f6">{{ $theme_options['spoutnik_graphisme'] }}</h5>
               </td>
             </tr>
             <tr style="border-bottom:1px solid #939393;">

@@ -20,7 +20,8 @@ $horaire = $theme_options['spoutnik_horaire'];
 
 
 
-<div id="sidebar-computer-menu" class="ui right very wide sidebar vertical menu computer only" style="background:<?php echo $colorpicker; ?>; color:#fefefe;">
+<div id="sidebar-computer-menu" class="ui right very wide sidebar vertical menu computer only"
+  style="background:<?php echo $colorpicker; ?>; color:#fefefe;">
   <div class="sidebar-container" style="margin:0 30px">
     <br>
     <br>
@@ -85,9 +86,9 @@ $horaire = $theme_options['spoutnik_horaire'];
             <br>
             <?php //_e('Opening hours','sage'); ?><br>
             <?php if ($horaire): ?>
-              <?php echo $horaire ?>
+            <?php echo $horaire ?>
             <?php else: ?>
-              <?php _e('Irregular schedule','sage'); ?>
+            <?php _e('Irregular schedule','sage'); ?>
             <?php endif; ?>
           </h5>
 
@@ -95,7 +96,13 @@ $horaire = $theme_options['spoutnik_horaire'];
             <?php //_e('ORGANISERS: ','sage'); ?>
             <?php echo 'PERMANENCE'; ?>
             <br><br>
+            @if ( $theme_options['spoutnik_programmation'] && $theme_options['spoutnik_comptabilite'] && $theme_options['spoutnik_graphisme'] )            
+            Programme: {{ $theme_options['spoutnik_programmation'] }}<br/>
+            Comptabilité: {{ $theme_options['spoutnik_comptabilite'] }}<br/>
+            Graphisme: {{ $theme_options['spoutnik_graphisme'] }}<br/>
+            @else
             <?php echo $organisers; ?>
+            @endif            
           </h5>
 
           <h5 class="sidebar-h5">
@@ -116,7 +123,8 @@ $horaire = $theme_options['spoutnik_horaire'];
   </div>
 </div>
 
-<div id="sidebar-mobile-menu" class="ui right wide sidebar vertical menu mobile only" style="background:<?php echo $colorpicker; ?>; color:#fefefe;">
+<div id="sidebar-mobile-menu" class="ui right wide sidebar vertical menu mobile only"
+  style="background:<?php echo $colorpicker; ?>; color:#fefefe;">
 
   <div class="sidebar-container" style="margin:0 30px">
     <br>
@@ -182,9 +190,9 @@ $horaire = $theme_options['spoutnik_horaire'];
             <br>
             <?php _e('Opening hours','sage'); ?><br>
             <?php if ($horaire): ?>
-              <?php echo $horaire ?>
+            <?php echo $horaire ?>
             <?php else: ?>
-              <?php _e('Irregular schedule','sage'); ?>
+            <?php _e('Irregular schedule','sage'); ?>
             <?php endif; ?>
           </h5>
 

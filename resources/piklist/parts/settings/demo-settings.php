@@ -161,6 +161,28 @@ piklist('field', array(
 
 piklist('field', array(
   'type' => 'text',
+  'field' => 'spoutnik_programmation',
+  'label' => __('Programmation','sage'),
+  'columns' => 6
+));
+
+piklist('field', array(
+  'type' => 'text',
+  'field' => 'spoutnik_comptabilite',
+  'label' => __('Comptabilite','sage'),
+  'columns' => 6
+));
+
+piklist('field', array(
+  'type' => 'text',
+  'field' => 'spoutnik_graphisme',
+  'label' => __('Graphisme','sage'),
+  'columns' => 6
+));
+
+
+piklist('field', array(
+  'type' => 'text',
   'field' => 'spoutnik_facebook',
   'label' => __('Facebook','sage'),
   'columns' => 12

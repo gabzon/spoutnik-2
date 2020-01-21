@@ -8,3 +8,8 @@ npm-debug.log
 yarn-error.log
 # vendor
 resources/assets/config-local.json
+.DS_Store
+resources/.DS_Store
+resources/assets/.DS_Store
+resources/lang/.DS_Store
+resources/piklist/.DS_Store

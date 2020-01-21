@@ -60,19 +60,19 @@ function nestedCategories($cat){
         <a class="nav-link active" id="cycles-tab" data-toggle="tab" href="#cycles" role="tab" aria-controls="cycles" aria-selected="true">Cycles</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Event</a>
+        <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Evénements</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id="collaboration-tab" data-toggle="tab" href="#collaboration" role="tab" aria-controls="collaboration" aria-selected="false">Collaboration</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="director-tab" data-toggle="tab" href="#director" role="tab" aria-controls="director" aria-selected="false">Director</a>
+        <a class="nav-link" id="director-tab" data-toggle="tab" href="#director" role="tab" aria-controls="director" aria-selected="false">Réalisateur</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false">Country</a>
+        <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false">Pays</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Month</a>
+        <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Mois</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id="distribution-tab" data-toggle="tab" href="#distribution" role="tab" aria-controls="distribution" aria-selected="false">Distribution</a>
