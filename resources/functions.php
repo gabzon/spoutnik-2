@@ -120,3 +120,11 @@ add_action( 'rest_api_init', function () {
 //     print_r($template);
 //     echo '</div>';
 // }
+
+
+function cycles_archives_orderby( $query ) {
+  if ( $query->is_archive() && $query->is_main_query() ) {      
+    $query->set( 'order', 'asc' );
+  }
+}
+add_action( 'pre_get_posts', 'cycles_archives_orderby' );

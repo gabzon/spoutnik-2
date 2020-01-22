@@ -33,10 +33,13 @@
   <br>
   <br>
   <div class="ui container">
+    @php
+    //global $wp_query;
+    //$loaded_posts = $wp_query->posts;
+    //array_reverse($loaded_posts);
+  // $wp_the_query->posts = $loaded_posts;
+  @endphp
     <div class="ui four column grid stackable">
-      @php
-          
-      @endphp
       @while (have_posts()) @php(the_post())
         @include('partials.content-'.get_post_type())
       @endwhile
@@ -46,11 +49,8 @@
   <br>
 
 
-  global $wp_the_query;
-
-  $loaded_posts = $wp_the_query->posts;
-  $loaded_posts = array_reverse($loaded_posts);
   
-  $wp_the_query->posts = $loaded_posts;
+
+
 
 @endsection

@@ -43,72 +43,72 @@ function nestedCategories($cat){
 @extends('layouts.app')
 
 @section('content')
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="ui container">
-    @while(have_posts()) @php(the_post())
-      @include('partials.page-header')
-      @include('partials.content-page')
-      {{ get_the_category_list() }}
-    @endwhile
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="ui container">
+  @while(have_posts()) @php(the_post())
+    @include('partials.page-header')
+    @include('partials.content-page')
+    {{ get_the_category_list() }}
+  @endwhile
 
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="cycles-tab" data-toggle="tab" href="#cycles" role="tab" aria-controls="cycles" aria-selected="true">Cycles</a>
-      </li>
-      {{-- <li class="nav-item">
-        <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Evénements</a>
-      </li> --}}
-      <li class="nav-item">
-        <a class="nav-link" id="collaboration-tab" data-toggle="tab" href="#collaboration" role="tab" aria-controls="collaboration" aria-selected="false">Collaboration</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="director-tab" data-toggle="tab" href="#director" role="tab" aria-controls="director" aria-selected="false">Réalisation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false">Pays</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Mois</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="distribution-tab" data-toggle="tab" href="#distribution" role="tab" aria-controls="distribution" aria-selected="false">Distributrices</a>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="cycles" role="tabpanel" aria-labelledby="cycles-tab">
-        <br>
-        @include('archives.cycles')
-      </div>
-      {{-- <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
-        <br>
-        @include('archives.events')
-      </div> --}}
-      <div class="tab-pane fade" id="collaboration" role="tabpanel" aria-labelledby="collaboration-tab">
-        <br>
-        @include('archives.collaborations')
-      </div>
-      <div class="tab-pane fade" id="director" role="tabpanel" aria-labelledby="director-tab">
-        <br>
-        @include('archives.directors')
-      </div>
-      <div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
-        <br>
-        @include('archives.country')
-      </div>
-      <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
-        <br>
-        @include('archives.monthly')
-      </div>
-      <div class="tab-pane fade" id="distribution" role="tabpanel" aria-labelledby="distribution-tab">
-        <br>
-        @include('archives.distribution')
-      </div>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="cycles-tab" data-toggle="tab" href="#cycles" role="tab" aria-controls="cycles" aria-selected="true">Cycles</a>
+    </li>
+    {{-- <li class="nav-item">
+      <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Evénements</a>
+    </li> --}}
+    <li class="nav-item">
+      <a class="nav-link" id="collaboration-tab" data-toggle="tab" href="#collaboration" role="tab" aria-controls="collaboration" aria-selected="false">Collaboration</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="director-tab" data-toggle="tab" href="#director" role="tab" aria-controls="director" aria-selected="false">Réalisation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false">Pays</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Mois</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="distribution-tab" data-toggle="tab" href="#distribution" role="tab" aria-controls="distribution" aria-selected="false">Distributrices</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="cycles" role="tabpanel" aria-labelledby="cycles-tab">
+      <br>
+      @include('archives.cycles')
+    </div>
+    {{-- <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
+      <br>
+      @include('archives.events')
+    </div> --}}
+    <div class="tab-pane fade" id="collaboration" role="tabpanel" aria-labelledby="collaboration-tab">
+      <br>
+      @include('archives.collaborations')
+    </div>
+    <div class="tab-pane fade" id="director" role="tabpanel" aria-labelledby="director-tab">
+      <br>
+      @include('archives.directors')
+    </div>
+    <div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
+      <br>
+      @include('archives.country')
+    </div>
+    <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+      <br>
+      @include('archives.monthly')
+    </div>
+    <div class="tab-pane fade" id="distribution" role="tabpanel" aria-labelledby="distribution-tab">
+      <br>
+      @include('archives.distribution')
     </div>
   </div>
-  <br>
-  <br>
+</div>
+<br>
+<br>
 @endsection
