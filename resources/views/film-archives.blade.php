@@ -59,14 +59,14 @@ function nestedCategories($cat){
       <li class="nav-item">
         <a class="nav-link active" id="cycles-tab" data-toggle="tab" href="#cycles" role="tab" aria-controls="cycles" aria-selected="true">Cycles</a>
       </li>
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Evénements</a>
-      </li>
+      </li> --}}
       <li class="nav-item">
         <a class="nav-link" id="collaboration-tab" data-toggle="tab" href="#collaboration" role="tab" aria-controls="collaboration" aria-selected="false">Collaboration</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="director-tab" data-toggle="tab" href="#director" role="tab" aria-controls="director" aria-selected="false">Réalisateur</a>
+        <a class="nav-link" id="director-tab" data-toggle="tab" href="#director" role="tab" aria-controls="director" aria-selected="false">Réalisation</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false">Pays</a>
@@ -75,7 +75,7 @@ function nestedCategories($cat){
         <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Mois</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="distribution-tab" data-toggle="tab" href="#distribution" role="tab" aria-controls="distribution" aria-selected="false">Distribution</a>
+        <a class="nav-link" id="distribution-tab" data-toggle="tab" href="#distribution" role="tab" aria-controls="distribution" aria-selected="false">Distributrices</a>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
@@ -83,10 +83,10 @@ function nestedCategories($cat){
         <br>
         @include('archives.cycles')
       </div>
-      <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
+      {{-- <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
         <br>
         @include('archives.events')
-      </div>
+      </div> --}}
       <div class="tab-pane fade" id="collaboration" role="tabpanel" aria-labelledby="collaboration-tab">
         <br>
         @include('archives.collaborations')

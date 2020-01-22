@@ -2,6 +2,8 @@
 Template Name: Langues
 --}}
 
+{{-- tutorial: https://wordpress.stackexchange.com/questions/167944/query-multiple-taxonomies --}}
+
 @extends('layouts.app')
 
 @section('content')
@@ -28,24 +30,36 @@ Template Name: Langues
       <br>
       <br>
       @php
+      if (site_url() === 'http://spoutnik.local') {
+        $archive_id = 2;        
+      }else if (site_url() === 'https://spoutnik.info') {
+        $archive_id = 2402;
+      }
+      //echo 'archive id:' . $archive_id;
       $args = array(
         'post_type'      => 'film',
         'posts_per_page'  => -1,
-        'category__not_in' => array( 2402 ),
+        'category__not_in' => array( 2 ),
         'order'       => 'ASC',
         'post_status'   => 'publish',
         'tax_query'      => array(
+          'relation' => 'OR',
           array(
             'taxonomy' => 'language',
             'field'    => 'slug',
-            'terms'    => array('vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais'),
+            'terms'    => array('vostang', 'vo-anglais', 'version-anglaise', 'sans-dial', 'muet', 'intertitres-anglais', 'version-anglaise'),
+          ),
+          array(
+            'taxonomy' => 'cycle',
+            'field'    => 'slug',
+            'terms'    => array('performances', 'cine-concert'),
           ),
         ),
       );
       // The Query
       $the_query = new WP_Query( $args );
       @endphp
-      <h1>Upcoming English speaking friendly films/events at Cinema Spoutnik</h1>
+      <h1>Upcoming English speaking friendly films/events at Cinema Spoutnik</h1>      
       <br>
       <div class="ui container">
         <div class="ui four column grid stackable">

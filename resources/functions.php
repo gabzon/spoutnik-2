@@ -71,6 +71,7 @@ array_map(function ($file) use ($sage_error) {
   'taxonomy/language',
   'taxonomy/program',
   'taxonomy/year',
+  'taxonomy/collaboration',
   //'post-status/film_status',
   'post-type/film',
 ]);

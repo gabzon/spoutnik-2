@@ -138,26 +138,26 @@ piklist('field', array(
   'columns' => 12
 ));
 
-piklist('field', array(
-  'type' => 'editor',
-  'field' => 'spoutnik_organisers',
-  'label' => __('Organisers','sage'),
-  'columns' => 12,
-  'options' => [
-    'wpautop' => true,
-    'media_buttons' => true,
-    'shortcode_buttons' => true,
-    'teeny' => false,
-    'dfw' => false,
-    'quicktags' => true,
-    'drag_drop_upload' => true,
-    'tinymce' => array(
-      'resize' => false,
-      'wp_autoresize_on' => true
-    )
-    ]
-  )
-);
+// piklist('field', array(
+//   'type' => 'editor',
+//   'field' => 'spoutnik_organisers',
+//   'label' => __('Organisers','sage'),
+//   'columns' => 12,
+//   'options' => [
+//     'wpautop' => true,
+//     'media_buttons' => true,
+//     'shortcode_buttons' => true,
+//     'teeny' => false,
+//     'dfw' => false,
+//     'quicktags' => true,
+//     'drag_drop_upload' => true,
+//     'tinymce' => array(
+//       'resize' => false,
+//       'wp_autoresize_on' => true
+//     )
+//     ]
+//   )
+// );
 
 piklist('field', array(
   'type' => 'editor',

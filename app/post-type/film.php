@@ -33,7 +33,7 @@ if ( ! function_exists('film_post_type') ) {
 			'description'         => __( 'List of movies playing at spoutnik', 'sage' ),
 			'labels'              => $labels,
 			'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', ),
-			'taxonomies'          => array( 'category', 'post_tag', 'film-year', 'director', 'language', 'country','format','cycle','couleur', 'program', 'distribution'),
+			'taxonomies'          => array( 'category', 'post_tag', 'film-year', 'director', 'language', 'country','format','cycle','couleur', 'program', 'distribution','collaboration'),
 			'hierarchical'        => false,
 			'public'              => true,
 			'show_in_rest' 				=> true,

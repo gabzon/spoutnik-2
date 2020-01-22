@@ -54,18 +54,6 @@ $horaire = $theme_options['spoutnik_horaire'];
               <td><?php echo $enfant; ?></td>
             </tr>
             <tr>
-              <td>Abonnement normal</td>
-              <td>Fr {{ $theme_options['tarif_abo_normal'] }}.-</td>
-            </tr>
-            <tr>
-              <td>Abonnement réduit</td>
-              <td>Fr {{ $theme_options['tarif_abo_reduit'] }}.-</td>
-            </tr>
-            <tr>
-              <td>Abonnement soutien</td>
-              <td>Fr {{ $theme_options['tarif_abo_soutien'] }}.-</td>
-            </tr>
-            <tr>
               <td><?php _e('20years/20francs','sage'); ?></td>
               <td>Fr.5.– </td>
             </tr>
@@ -79,9 +67,27 @@ $horaire = $theme_options['spoutnik_horaire'];
             </tr>
           </table>
           <br>
+          <h4><strong>Abonnement annuel</strong></h4>
+          <p class="transition hidden">
+            <table>
+              <tr>
+                <td>Abonnement normal</td>
+                <td>Fr {{ $theme_options['tarif_abo_normal'] }}.-</td>
+              </tr>
+              <tr>
+                <td>Abonnement réduit</td>
+                <td>Fr {{ $theme_options['tarif_abo_reduit'] }}.-</td>
+              </tr>
+              <tr>
+                <td>Abonnement soutien</td>
+                <td>Fr {{ $theme_options['tarif_abo_soutien'] }}.-</td>
+              </tr>
+            </table>
+          </p>
           <?php echo _e('En vente à la billetterie du Spoutnik','sage') ?>
         </h5>
       </div>
+
       <div class="title">
         <h5 class="white"><i class="dropdown icon"></i><?php _e('CONTACT','sage'); ?></h5>
       </div>
@@ -108,13 +114,14 @@ $horaire = $theme_options['spoutnik_horaire'];
             <?php //_e('ORGANISERS: ','sage'); ?>
             <?php echo 'PERMANENCE'; ?>
             <br><br>
-            @if ( $theme_options['spoutnik_programmation'] && $theme_options['spoutnik_comptabilite'] && $theme_options['spoutnik_graphisme'] )            
-            Programme: {{ $theme_options['spoutnik_programmation'] }}<br/>
-            Comptabilité: {{ $theme_options['spoutnik_comptabilite'] }}<br/>
-            Graphisme: {{ $theme_options['spoutnik_graphisme'] }}<br/>
+            @if ( $theme_options['spoutnik_programmation'] && $theme_options['spoutnik_comptabilite'] &&
+            $theme_options['spoutnik_graphisme'] )
+            Programme: {{ $theme_options['spoutnik_programmation'] }}<br />
+            Comptabilité: {{ $theme_options['spoutnik_comptabilite'] }}<br />
+            Graphisme: {{ $theme_options['spoutnik_graphisme'] }}<br />
             @else
             <?php echo $organisers; ?>
-            @endif            
+            @endif
           </h5>
 
           <h5 class="sidebar-h5">
@@ -174,18 +181,6 @@ $horaire = $theme_options['spoutnik_horaire'];
               <td>Fr.5.– </td>
             </tr>
             <tr>
-              <td>Abonnement normal</td>
-              <td>Fr {{ $theme_options['tarif_abo_normal'] }}.-</td>
-            </tr>
-            <tr>
-              <td>Abonnement réduit</td>
-              <td>Fr {{ $theme_options['tarif_abo_reduit'] }}.-</td>
-            </tr>
-            <tr>
-              <td>Abonnement soutien</td>
-              <td>Fr {{ $theme_options['tarif_abo_soutien'] }}.-</td>
-            </tr>
-            <tr>
               <td><?php _e('member ','sage'); ?></td>
               <td>
                 <?php echo $membre . ' ('. $membre_annee .')'; ?>
@@ -195,6 +190,23 @@ $horaire = $theme_options['spoutnik_horaire'];
             </tr>
           </table>
           <br>
+          <h4><strong>Abonnement annuel</strong></h4>
+          <p class="transition hidden">
+            <table>
+              <tr>
+                <td>Abonnement normal</td>
+                <td>Fr {{ $theme_options['tarif_abo_normal'] }}.-</td>
+              </tr>
+              <tr>
+                <td>Abonnement réduit</td>
+                <td>Fr {{ $theme_options['tarif_abo_reduit'] }}.-</td>
+              </tr>
+              <tr>
+                <td>Abonnement soutien</td>
+                <td>Fr {{ $theme_options['tarif_abo_soutien'] }}.-</td>
+              </tr>
+            </table>
+          </p>
           <?php echo _e('En vente à la billetterie du Spoutnik','sage') ?>
         </h5>
       </div>
@@ -221,15 +233,17 @@ $horaire = $theme_options['spoutnik_horaire'];
           </h5>
 
           <h5 class="sidebar-h5">
-            <?php echo 'PERMANENCE'; ?><br><br>
+            <?php //echo 'PERMANENCE'; ?>
+            {{-- <br><br> --}}
             <br><br>
-            @if ( $theme_options['spoutnik_programmation'] && $theme_options['spoutnik_comptabilite'] && $theme_options['spoutnik_graphisme'] )            
-            Programme: {{ $theme_options['spoutnik_programmation'] }}<br/>
-            Comptabilité: {{ $theme_options['spoutnik_comptabilite'] }}<br/>
-            Graphisme: {{ $theme_options['spoutnik_graphisme'] }}<br/>
+            @if ( $theme_options['spoutnik_programmation'] && $theme_options['spoutnik_comptabilite'] &&
+            $theme_options['spoutnik_graphisme'] )
+            gestion et programme: {{ $theme_options['spoutnik_programmation'] }}<br />
+            Comptabilité: {{ $theme_options['spoutnik_comptabilite'] }}<br />
+            Graphisme: {{ $theme_options['spoutnik_graphisme'] }}<br />
             @else
             <?php echo $organisers; ?>
-            @endif  
+            @endif
           </h5>
 
           <h5 class="sidebar-h5">
