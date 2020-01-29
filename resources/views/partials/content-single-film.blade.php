@@ -50,40 +50,40 @@ $notification_dates = Film::notification_dates($post->ID);
     <br>
     <br>
     <br>
-    @if ( has_term('cycles-focus','cycle') )
+    <br>
 
-    @php
-    $cycle = get_term_by('slug', 'cycles-focus', 'cycle');
-    $focus_children = get_term_children( $cycle->term_id, 'cycle' );
-    //https://spoutnik.info/cycle/satellites/
-    @endphp
+    <?php
+    $terms = wp_get_post_terms($post->ID,'cycle'); 
+    $cycle = get_term_by('slug', 'cycles-focus', 'cycle');   
+    ?>
 
-    @foreach ($focus_children as $item)
-    @php $child_cycle = get_term_by('id', $item, 'cycle') @endphp
-    @if (has_term($child_cycle->slug,'cycle'))
+    @foreach ($terms as $t)
 
+    @if ($t->parent === $cycle->term_id)
     <div class="ui grid stackable">
       <div class="one wide column"></div>
       <div class="seven wide column">
-        <a href="{{ esc_url(site_url('cycle/' . $child_cycle->slug )) }}">
-          <img src="{{ get_term_meta($child_cycle->term_id, 'image_cycle', true) }}" alt="{{$child_cycle->name}}" class="ui image" />
+        <a href="{{ esc_url(site_url('cycle/' . $t->slug )) }}">
+          <img src="{{ get_term_meta($t->term_id, 'image_cycle', true) }}" alt="{{$t->name}}"
+            class="ui image" />
         </a>
         <br>
         <br>
       </div>
       <div class="seven wide column">
-        <a href="{{ esc_url(site_url('cycle/' . $child_cycle->slug )) }}" style="color:black">
-          <h1>{{ $child_cycle->name }}</h1>
+        <a href="{{ esc_url(site_url('cycle/' . $t->slug )) }}" style="color:black">
+          <h4>{{ $t->name }}</h4>
         </a>
-        {!! term_description( $child_cycle->term_id, 'cycle' ) !!}
+        {!! term_description( $t->term_id, 'cycle' ) !!}
         <br>
         <br>
       </div>
       <div class="one wide column"></div>
     </div>
     @endif
+
     @endforeach
-    @endif
+
   </div>
   </div>
   <br>
