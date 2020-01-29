@@ -48,7 +48,7 @@ $cinema_address = $theme_options['spoutnik_address_cinema'];
             </tr>
             <tr style="border-bottom:1px solid #939393;">
               <td valign="top" style="padding:5px 0;">
-                <h5 class="f6">COMPTABILITÉ</h5>
+                <h5 class="f6">COMPTABILITÉ &nbsp;&nbsp;</h5>
               </td>
               <td valign="top" style="padding:5px 0;">
                 <h5 class="f6">{{ $theme_options['spoutnik_comptabilite'] }}</h5>

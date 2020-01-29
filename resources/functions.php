@@ -121,10 +121,23 @@ add_action( 'rest_api_init', function () {
 //     echo '</div>';
 // }
 
-
+// https://developer.wordpress.org/reference/hooks/pre_get_posts/
+// https://wordpress.stackexchange.com/questions/82795/how-can-i-change-wp-main-archives-loop-to-sort-by-name-or-title
 function cycles_archives_orderby( $query ) {
-  if ( $query->is_archive() && $query->is_main_query() ) {      
-    $query->set( 'order', 'asc' );
+  if ( $query->is_archive() && $query->is_main_query() ) {  
+    //is_category()     
+    $term = term_exists( 'cycles-reguliers', 'cycle' );
+    if($term){
+      $query->set( 'order', 'asc' );
+    }else{
+      $query->set( 'order', 'desc' );
+    }
   }
 }
 add_action( 'pre_get_posts', 'cycles_archives_orderby' );
+
+
+
+if ( $term !== 0 && $term !== null ) {
+    echo __( "'Uncategorized' category exists!", "textdomain" );
+}

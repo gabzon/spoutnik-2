@@ -63,7 +63,7 @@ function nestedCategories($cat){
       <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Evénements</a>
     </li> --}}
     <li class="nav-item">
-      <a class="nav-link" id="collaboration-tab" data-toggle="tab" href="#collaboration" role="tab" aria-controls="collaboration" aria-selected="false">Collaboration</a>
+      <a class="nav-link" id="collaboration-tab" data-toggle="tab" href="#collaboration" role="tab" aria-controls="collaboration" aria-selected="false">Collaborations</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="director-tab" data-toggle="tab" href="#director" role="tab" aria-controls="director" aria-selected="false">Réalisation</a>
