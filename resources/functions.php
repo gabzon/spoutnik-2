@@ -134,10 +134,5 @@ function cycles_archives_orderby( $query ) {
     }
   }
 }
-add_action( 'pre_get_posts', 'cycles_archives_orderby' );
+//add_action( 'pre_get_posts', 'cycles_archives_orderby' );
 
-
-
-if ( $term !== 0 && $term !== null ) {
-    echo __( "'Uncategorized' category exists!", "textdomain" );
-}
