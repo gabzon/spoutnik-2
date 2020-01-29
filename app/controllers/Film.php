@@ -46,7 +46,11 @@ class Film extends Controller
       //$wpdb->update( $wpdb->posts, array( 'post_status' => 'inactive' ), array( 'ID' => $id ) );
       // localhost archive id=499
       // spoutnik.info archive id=2402
-      wp_set_post_categories($id, 2402);
+      $archive_id = 2402;
+      if (site_url() === 'http://spoutnik.local' ) {
+        $archive_id = 2; 
+      }
+      wp_set_post_categories($id, $archive_id);
       wp_remove_object_terms($id,['focus','landing-page'], 'category');
       clean_post_cache( get_the_ID() );
       //$old_status = $post->post_status;
