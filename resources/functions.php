@@ -124,15 +124,29 @@ add_action( 'rest_api_init', function () {
 // https://developer.wordpress.org/reference/hooks/pre_get_posts/
 // https://wordpress.stackexchange.com/questions/82795/how-can-i-change-wp-main-archives-loop-to-sort-by-name-or-title
 function cycles_archives_orderby( $query ) {
-  if ( $query->is_archive() && $query->is_main_query() ) {  
-    //is_category()     
-    $term = term_exists( 'cycles-reguliers', 'cycle' );
-    if($term){
-      $query->set( 'order', 'asc' );
-    }else{
-      $query->set( 'order', 'desc' );
-    }
+  $cycle_regulier = get_term_by('slug','cycles-reguliers','cycle');
+  $termchildren = get_term_children( $cycle_regulier->term_id, 'cycle' );
+
+  // echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis voluptatem necessitatibus consequatur nam quisquam asperiores, perferendis blanditiis temporibus tempore quo sint! Quis aliquam earum officiis, sapiente et cumque corrupti?';
+  // echo '<div style="padding-top:100px">';
+  // echo 'is archive: ' . $query->is_archive();
+  // echo '<br>';
+  // echo 'is main query:' . $query->is_main_query();
+  // echo '<br>';
+  // echo 'is tax:' . $query->is_tax('cycle',array('cycle-reguliers'));
+  // echo '<br>';
+  // echo 'cycle regulier:'. $cycle_regulier->name;
+  // print_r($termchildren);
+
+  // foreach($termchildren as $t){
+  //   $the_term = get_term( $t, 'cycle');
+  //   echo $the_term->name;
+  // }
+  // echo '</div>';
+  
+  if ( $query->is_archive() && $query->is_main_query() && is_tax('cycle', $termchildren)) {  
+    $query->set( 'order', 'asc' );   
   }
 }
-//add_action( 'pre_get_posts', 'cycles_archives_orderby' );
+add_action( 'pre_get_posts', 'cycles_archives_orderby' );
 
