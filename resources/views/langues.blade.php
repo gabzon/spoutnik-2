@@ -88,8 +88,8 @@ wp_reset_query();
     <div class="ui four column grid stackable">
         @if ( $the_films->have_posts() )
         @while ($the_films->have_posts()) @php($the_films->the_post())
-        <div class="column">
-            @if (has_term( $languages, 'language' ) || has_term( $cycles, 'cycle' ))
+        @if (has_term( $languages, 'language' ) || has_term( $cycles, 'cycle' ))
+            <div class="column">
             <article @php(post_class())>
                 <header>
                     @php( $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full') )
@@ -113,8 +113,8 @@ wp_reset_query();
                     {!! get_the_term_list( get_the_ID(), 'language', '', ', ' ) !!} --}}
                 </div>
             </article>
-            @endif
-        </div>
+            </div>
+        @endif
         @endwhile
         @php
         wp_reset_postdata();
