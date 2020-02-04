@@ -81,7 +81,7 @@ $the_films = new WP_Query( $args );
 </div>
 @endwhile
 @php
-    wp_reset_query();
+wp_reset_query();
 @endphp
 
 <div class="ui container">
@@ -96,25 +96,21 @@ $the_films = new WP_Query( $args );
                     <a href="@php(the_permalink())">
                         <img src="{{ $thumb['0'] }}" alt="" class="ui image" />
                     </a>
-                    <h2 class="entry-title"><a href="@php(the_permalink())" class="title-link">@php( the_title() )</a>
+                    <h2 class="entry-title">
+                        <a href="@php(the_permalink())" class="title-link">@php( the_title() )</a>
                     </h2>
-                    @if ( get_post_meta(get_the_ID(),'film_landing',true) )
-                    <h4>
-                        @php
-                        echo get_post_meta(get_the_ID(),'film_landing',true);
-                        @endphp
-                    </h4>
-                    @endif
                 </header>
+                @if ( get_post_meta(get_the_ID(),'film_landing',true) )
+                <h4>{!! get_post_meta(get_the_ID(),'film_landing',true) !!}</h4>
+                @endif
                 <br>
                 <div class="entry-summary">
                     @php(the_excerpt())
-                    {!! get_the_term_list( get_the_ID(), 'cycle', '', ', ' ) !!}
+                    {{-- {!! get_the_term_list( get_the_ID(), 'cycle', '', ', ' ) !!}
                     <hr>
                     {!! get_the_term_list( get_the_ID(), 'category', '', ', ' ) !!}
                     <hr>
-                    {!! get_the_term_list( get_the_ID(), 'language', '', ', ' ) !!}
-                    has_term()
+                    {!! get_the_term_list( get_the_ID(), 'language', '', ', ' ) !!} --}}
                 </div>
             </article>
             @endif
@@ -135,3 +131,12 @@ $the_films = new WP_Query( $args );
 <br>
 <br>
 @endsection
+
+
+<header>
+    @php( $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full') )
+    <a href="@php(the_permalink())">
+        <img src="{{ $thumb['0'] }}" alt="" class="ui image" />
+    </a>
+    <h2 class="entry-title"><a href="@php(the_permalink())" class="title-link">@php( the_title() )</a></h2>
+</header>

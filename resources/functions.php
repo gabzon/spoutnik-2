@@ -125,7 +125,10 @@ add_action( 'rest_api_init', function () {
 // https://wordpress.stackexchange.com/questions/82795/how-can-i-change-wp-main-archives-loop-to-sort-by-name-or-title
 function cycles_archives_orderby( $query ) {
   $cycle_regulier = get_term_by('slug','cycles-reguliers','cycle');
-  $termchildren = get_term_children( $cycle_regulier->term_id, 'cycle' );
+  $termchildren_regulier = get_term_children( $cycle_regulier->term_id, 'cycle' );
+  
+  $cycle_focus = get_term_by('slug','cycles-focus','cycle');
+  $termchildren_focus = get_term_children( $cycle_focus->term_id, 'cycle' );
 
   // echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis voluptatem necessitatibus consequatur nam quisquam asperiores, perferendis blanditiis temporibus tempore quo sint! Quis aliquam earum officiis, sapiente et cumque corrupti?';
   // echo '<div style="padding-top:100px">';
@@ -144,9 +147,11 @@ function cycles_archives_orderby( $query ) {
   // }
   // echo '</div>';
   
-  if ( $query->is_archive() && $query->is_main_query() && is_tax('cycle', $termchildren)) {  
+  if ( $query->is_archive() && $query->is_main_query() && is_tax('cycle', $termchildren_focus)) {  
     $query->set( 'order', 'asc' );   
   }
 }
 add_action( 'pre_get_posts', 'cycles_archives_orderby' );
+
+
 
