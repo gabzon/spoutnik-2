@@ -57,7 +57,7 @@ $the_films = new WP_Query( $args );
 <br>
 <div class="ui container">
     @while(have_posts()) @php(the_post())
-    @include('partials.page-header')
+    {{-- @include('partials.page-header') --}}
     <h1>{{ get_queried_object()->name }}</h1>
     <div class="ui grid stackable">
         <div class="one wide column"></div>
@@ -131,12 +131,3 @@ wp_reset_query();
 <br>
 <br>
 @endsection
-
-
-<header>
-    @php( $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full') )
-    <a href="@php(the_permalink())">
-        <img src="{{ $thumb['0'] }}" alt="" class="ui image" />
-    </a>
-    <h2 class="entry-title"><a href="@php(the_permalink())" class="title-link">@php( the_title() )</a></h2>
-</header>
