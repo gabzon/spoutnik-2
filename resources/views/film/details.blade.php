@@ -49,11 +49,17 @@ $actors = get_post_meta($post->ID,'film_actors');
 <style>
   table#film-detail tr td h5 a {
     color: black;
+  }
+
+  table#film-detail tr td h5 a {
     text-decoration: underline;
   }
 
   .film a {
     color: black;
+  }
+
+  .film a:hover {
     text-decoration: underline;
   }
 </style>
@@ -163,7 +169,7 @@ $actors = get_post_meta($post->ID,'film_actors');
   </tr>
   @endif
 
-  <tr>
+  <tr id="collaboration">
     <td valign="top" width="40%">
       <h5><?php _e('Cycle','sage'); ?></h5>
     </td>
