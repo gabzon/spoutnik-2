@@ -62,7 +62,7 @@ array_map(function ($file) use ($sage_error) {
   'helpers', 'setup', 'filters', 'admin', 'default', 'sorting', 'spoutnik',
   'status',
   'api/film-api',
-  'taxonomy/couleur',
+  // 'taxonomy/couleur',
   'taxonomy/distribution',
   'taxonomy/country',
   'taxonomy/cycle',
