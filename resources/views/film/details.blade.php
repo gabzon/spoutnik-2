@@ -51,7 +51,7 @@ $actors = get_post_meta($post->ID,'film_actors');
     color: black;
   }
 
-  table#film-detail tr td h5 a {
+  table#film-detail tr td h5 a:hover {
     text-decoration: underline;
   }
 
