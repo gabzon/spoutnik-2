@@ -51,6 +51,11 @@ $actors = get_post_meta($post->ID,'film_actors');
     color: black;
     text-decoration: underline;
   }
+
+  .film a {
+    color: black;
+    text-decoration: underline;
+  }
 </style>
 
 <table id="film-detail">
@@ -153,7 +158,7 @@ $actors = get_post_meta($post->ID,'film_actors');
       <h5><?php _e('Collaboration','sage'); ?></h5>
     </td>
     <td>
-      <h5 style="color:black;"><?php the_terms( $post->ID, 'collaboration', '', '<br>' ); ?></h5>
+      <h5 style="color:black;" class="film"><?php the_terms( $post->ID, 'collaboration', '', '<br>' ); ?></h5>
     </td>
   </tr>
   @endif
@@ -163,7 +168,7 @@ $actors = get_post_meta($post->ID,'film_actors');
       <h5><?php _e('Cycle','sage'); ?></h5>
     </td>
     <td>
-      <h5 style="color:black;"><?php the_terms( $post->ID, 'cycle', '', '<br>' ); ?></h5>
+      <h5 style="color:black;" class="film"><?php the_terms( $post->ID, 'cycle', '', '<br>' ); ?></h5>
     </td>
   </tr>
 
