@@ -1,6 +1,6 @@
 <?php
 
-$cycle = array('collaboration');
+$collaboration = array('collaboration');
 
 $args = array(
     'orderby'           => 'name',
@@ -8,8 +8,7 @@ $args = array(
     'hide_empty'        => true,
 );
 
-$cats = get_terms($cycle, $args);
-// $coll = get_terms(['collaboration'], $args);
+$cats = get_terms($collaboration, $args);
 
 //piklist::pre($cats);
 foreach( $cats as $cat ) {
