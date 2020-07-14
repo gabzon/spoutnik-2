@@ -12,7 +12,7 @@ $cats = get_terms($collaboration, $args);
 
 //piklist::pre($cats);
 foreach( $cats as $cat ) {
-    echo $cat->name .' '. $cat->term_id . ' '. $cat->slug .'<br>';
+    //echo $cat->name .' '. $cat->term_id . ' '. $cat->slug .'<br>';
 
     if ($cat->slug === 'lieux-culturels') {
         $term_id = $cat->term_id;
