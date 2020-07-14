@@ -45,7 +45,15 @@ $year = get_the_terms($post->ID,'film-year');
 $format = get_the_terms($post->ID,'format');
 $actors = get_post_meta($post->ID,'film_actors');
 @endphp
-<table>
+
+<style>
+  table#film-detail tr td h5 a {
+    color: black;
+    text-decoration: underline;
+  }
+</style>
+
+<table id="film-detail">
   @if ($director)
   <tr>
     <td valign="top" width="40%">
