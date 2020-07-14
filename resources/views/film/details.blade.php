@@ -49,6 +49,7 @@ $actors = get_post_meta($post->ID,'film_actors');
 <style>
   table#film-detail tr td h5 a {
     color: black;
+    text-decoration: none;
   }
 
   table#film-detail tr td h5 a:hover {
@@ -56,6 +57,7 @@ $actors = get_post_meta($post->ID,'film_actors');
   }
 
   .film a {
+    text-decoration: none;
     color: black;
   }
 
