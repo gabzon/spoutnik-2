@@ -1,6 +1,5 @@
 <?php
 
-
 $cycle = array('collaboration');
 
 $args = array(
@@ -9,8 +8,24 @@ $args = array(
     'hide_empty'        => true,
 );
 
-$cats = get_terms($cycle, $args);
+$cats = get_terms(['cycle'], $args);
+$coll = get_terms(['collaboration'], $args);
 
+?>
+<div class="ui two column grid">
+    <div class="row">
+        <div>
+            <h1>cycles</h1>
+            <pre><?php print_r($cats) ?></pre>
+        </div>
+        <div>
+            <h1>coll</h1>
+            <pre><?php print_r($coll) ?></pre>
+        </div>
+    </div>    
+</div>
+
+<?php
 //piklist::pre($cats);
 foreach( $cats as $cat ) {
     //echo $cat->name .' '. $cat->term_id . ' '. $cat->slug .'<br>';
