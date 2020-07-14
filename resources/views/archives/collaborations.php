@@ -1,7 +1,7 @@
 <?php
 
 
-$cycle = array('cycle');
+$cycle = array('collaboration');
 
 $args = array(
     'orderby'           => 'name',
@@ -15,7 +15,7 @@ $cats = get_terms($cycle, $args);
 foreach( $cats as $cat ) {
     //echo $cat->name .' '. $cat->term_id . ' '. $cat->slug .'<br>';
 
-    if ($cat->slug === 'collaboration-lieux-culturels') {
+    if ($cat->slug === 'associations-collectifs') {
         $term_id = $cat->term_id;
         $taxonomy_name = 'cycle';
         $termchildren = get_term_children( $term_id, $taxonomy_name );
@@ -23,7 +23,7 @@ foreach( $cats as $cat ) {
         display_order_alphabeticaly($termchildren, 'cycle');
     }
 
-    if ($cat->slug === 'collaboration-festival') {
+    if ($cat->slug === 'festivals-evenements') {
         $term_id = $cat->term_id;
         $taxonomy_name = 'cycle';
         $termchildren = get_term_children( $term_id, $taxonomy_name );
@@ -31,7 +31,7 @@ foreach( $cats as $cat ) {
         display_order_alphabeticaly($termchildren, 'cycle');
     }
 
-    if ($cat->slug === 'collaboration-institutions') {
+    if ($cat->slug === 'institutions') {
         $term_id = $cat->term_id;
         $taxonomy_name = 'cycle';
         $termchildren = get_term_children( $term_id, $taxonomy_name );
@@ -39,7 +39,7 @@ foreach( $cats as $cat ) {
         display_order_alphabeticaly($termchildren, 'cycle');
     }
 
-    if ($cat->slug === 'collaboration-associations') {
+    if ($cat->slug === 'lieux-culturels') {
         $term_id = $cat->term_id;
         $taxonomy_name = 'cycle';
         $termchildren = get_term_children( $term_id, $taxonomy_name );
@@ -49,3 +49,8 @@ foreach( $cats as $cat ) {
 }
 
 $category = get_term_by('id', 'collaborations','cycle');
+
+
+
+
+
