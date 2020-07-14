@@ -46,8 +46,10 @@ foreach( $cats as $cat ) {
         display_order_alphabeticaly($termchildren, 'collaboration');
     }
 }
+
+
 $category = get_term_by('id', 'collaborations','cycle');
-?>
+
 
 
 
