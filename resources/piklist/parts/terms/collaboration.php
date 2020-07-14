@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Extra options
-Taxonomy: cycle
+Taxonomy: collaboration
 Capability: manage_options
 */
 
